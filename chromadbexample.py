@@ -23,7 +23,7 @@ collection.upsert(
 
 
 results = collection.query(
-    query_texts=["This is a new query document"], # Chroma will embed this for you
+    query_texts=["orange fruit"], # Chroma will embed this for you
     n_results=3 # how many results to return
 )
 

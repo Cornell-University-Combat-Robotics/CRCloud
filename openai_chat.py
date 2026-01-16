@@ -11,7 +11,7 @@ response = client.chat.completions.create(
     model="gpt-3.5-turbo", 
     messages=[
         # CONTEXT HERE
-        {"role": "system", "content": "You are a helpful assistant. Rohin is 6 feet tall"},
+        {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": f"{question}"}
     ]
 )

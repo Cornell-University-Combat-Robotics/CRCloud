@@ -1,0 +1,59 @@
+JANFAB DAY 2
+
+AaronAnanyaEthan DGraceJennyRiddhiRohinSophieTylerShaoAnikaRyanVinsonLPPPAPPPAPPPPTasks: 
+Agenda
+ Take attendance! (P if present, L if late, A if absent, E if excused)
+
+
+ProjectMembersBrief, informative summary of work done, emphasis on high-level problems and plans for next meeting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sensors: 
+? Set up the arena 
+? Tested the main.py with just the corner detection 
+? Seem to work better now
+? Realized before our connection to ground on Arduino is loose
+? Logically, the code still doesn't seem to work
+
+? Tested using sensor data
+? IMU is flip in the bot, so we have to take away the negative
+? Sensor itself become super inaccurate with robot drift
+? Ex. yaw value goes from 180 to 190 degree within 1 second of move and hitting
+? But algorithm and detection seem to behave well 
+
+? Tested with 24-25 algorithm code
+? It appears to work better 
+? But after clean the wheels, it no longer able to attack the enemies rapidly
+
+? Testing this year's code again
+
+Corner Detection:
+
+Testing:
+? auto save should always be on. PLEASE
+? image.size / 3 bug in Corner Detection is fixed
+? more testing to be done
+
+MechE:
+? Everything is ordered
+? We need to 3D print
+? Most important thing is fixing Bot #2 (the second orange one)
+
+Autonomous Meeting Notes9/4/2025
+

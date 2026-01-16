@@ -1,17 +1,76 @@
+# {"title": str, "content": str}
+# 1. load data
+# 2. vectorize
+# 3. chat chat chat
+
 import chromadb
-import drive_downloads
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+import json
 
-DEBUG = True
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI()
+
+chroma_client = chromadb.Client()
 
 
-if DEBUG:
-    filename = "test"
-    drive_downloads.save_json(drive_downloads.CLOUD_FOLDER_ID)
-    collection = drive_downloads.vectorize_json("data.json")
-    print(f'Vectorize_json return: {collection}')
+hashmap = {}
+with open("json_data/janfab_data.json", 'r') as file:
+        hashmap = json.load(file)
+
+docs = list(hashmap.values())
+ids = list(hashmap.keys())
+# switch `create_collection` to `get_or_create_collection` to avoid creating a new collection every time
+collection = chroma_client.get_or_create_collection(name="my_collection")
+
+# switch `add` to `upsert` to avoid adding the same documents every time
+# collection.upsert(
+#     documents=[
+#         "Riddhi is on the Autonomous team",
+#         "Rohin is on the Autonomous team",
+#         "Rohin doesn't believe in free will",
+#         "Anika does believe in free will",
+#         "Anika is on the Autonomous team"
+#     ],
+#     ids=["id1", "id2","id3", "id4", "id5"]
+# )
+
+collection.upsert(
+    documents=docs,
+    ids=ids
+)
+
+while(True):
+    query = input("Ask away! Enter exit to quit\n ")
+
+    if (query == "exit"):
+        break
+    
+    num_results = 3
 
     results = collection.query(
-    query_texts=["Rohin is 5'11"], # Chroma will embed this for you
-    n_results=3 # how many results to return
+        query_texts=[query], # Chroma will embed this for you
+        n_results=num_results # how many results to return
     )
-    print(f"top 3 results = {results['ids']}")  
+
+
+    context = ""
+
+    for i in range(0, num_results):
+        context += results["documents"][0][i]
+
+    print(context)
+
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo", 
+        messages=[
+            # CONTEXT HERE
+            {"role": "system", "content": "You are a helpful RAG assistant. Here is your context: " + context},
+            {"role": "user", "content": f"{query}"}
+        ]
+    )
+    print(f"question: {query}")
+    print(f"answer: {response.choices[0].message.content}")
