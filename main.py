@@ -4,6 +4,7 @@
 # 3. chat chat chat
 
 import chromadb
+from sentence_transformers import SentenceTransformer
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -14,8 +15,8 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI()
 
+embedding_function = SentenceTransformer("multi-qa-mpnet-base-dot-v1") # modify this for different encoding type
 chroma_client = chromadb.Client()
-
 
 hashmap = {}
 with open("json_data/janfab_data.json", 'r') as file:
@@ -23,6 +24,11 @@ with open("json_data/janfab_data.json", 'r') as file:
 
 docs = list(hashmap.values())
 ids = list(hashmap.keys())
+
+embeddings = []
+for doc in docs:
+    embeddings.append(embedding_function.encode(doc))
+
 # switch `create_collection` to `get_or_create_collection` to avoid creating a new collection every time
 collection = chroma_client.get_or_create_collection(name="my_collection")
 
@@ -39,6 +45,7 @@ collection = chroma_client.get_or_create_collection(name="my_collection")
 # )
 
 collection.upsert(
+    embeddings=embeddings,
     documents=docs,
     ids=ids
 )
@@ -51,8 +58,10 @@ while(True):
     
     num_results = 3
 
+    query_embedding = embedding_function.encode(query)
+
     results = collection.query(
-        query_texts=[query], # Chroma will embed this for you
+        query_embeddings=query_embedding,
         n_results=num_results # how many results to return
     )
 
