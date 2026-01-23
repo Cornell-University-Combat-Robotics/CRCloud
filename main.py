@@ -68,7 +68,7 @@ while(True):
         model="gpt-3.5-turbo", 
         messages=[
             # CONTEXT HERE
-            {"role": "system", "content": "You are a helpful RAG assistant. Here is your context: " + context},
+            {"role": "system", "content": "You are a helpful RAG assistant for cornell's combat robotics team. Here is your context: " + context},
             {"role": "user", "content": f"{query}"}
         ]
     )
