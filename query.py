@@ -58,7 +58,7 @@ while(True):
 
     num_results = 3
 
-    query_embedding = embedding_function.encode(query)
+    query_embedding = embedding_function.encode(query).tolist()
 
     results = collection.query(
         query_embeddings=query_embedding,
