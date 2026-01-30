@@ -27,7 +27,7 @@ ids = list(hashmap.keys())
 
 embeddings = []
 for doc in docs:
-    embeddings.append(embedding_function.encode(doc))
+    embeddings.append(embedding_function.encode(doc).tolist())
 
 # switch `create_collection` to `get_or_create_collection` to avoid creating a new collection every time
 collection = chroma_client.get_or_create_collection(name="my_collection")
@@ -55,7 +55,7 @@ while(True):
 
     if (query == "exit"):
         break
-    
+
     num_results = 3
 
     query_embedding = embedding_function.encode(query)
@@ -71,12 +71,12 @@ while(True):
     context = ""
 
     for i in range(0, num_results):
-        context += f"{results["ids"][0][i]} \n"
+        context += f"{results['documents'][0][i]} \n"
 
     print(f"context: \n {context}")
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo", 
+        model="gpt-3.5-turbo",
         messages=[
             # CONTEXT HERE
             {"role": "system", "content": "You are a helpful RAG assistant for cornell's combat robotics team (CRC). Answer questions about our documentation, and explain your reasoning behind each answer. if you are not confident in your answer, say you dont know. Here is your context: " + context},
