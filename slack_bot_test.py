@@ -1,14 +1,13 @@
 import os
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
+from dotenv import load_dotenv
 
-# Set your bot token and channel ID as environment variables for security
-# For this example, you can replace them directly or set environment variables:
-# os.environ["SLACK_BOT_TOKEN"] = "YOUR_BOT_TOKEN"
-# os.environ["SLACK_CHANNEL_ID"] = "YOUR_CHANNEL_ID"
+
+load_dotenv()
 
 slack_token = os.getenv("SLACK_BOT_TOKEN") # Replace with your token
-channel_id = os.getenv("SLACK_CHANNEL_ID") # Replace with your channel ID
+channel_id = os.getenv("YOUR_CHANNEL_ID") # Replace with your channel ID
 message_text = "Hello, world! This message was sent using the Python Slack SDK."
 
 client = WebClient(token=slack_token)
