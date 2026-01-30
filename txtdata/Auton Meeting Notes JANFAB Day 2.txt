@@ -1,11 +1,43 @@
 JANFAB DAY 2
 
-AaronAnanyaEthan DGraceJennyRiddhiRohinSophieTylerShaoAnikaRyanVinsonLPPPAPPPAPPPPTasks: 
+Aaron: height 6'
+Ananya: height: 4'
+Ethan Decamp: height 6 foot 6
+Grace: 3 feet 3"
+Jenny: height: 4 foot 9"
+Riddhi: 5' 12"
+Rohin: 8' 5"
+Sophie: 8" 2'
+Tyler
+Shao:2 feet tall
+Anika: 6 feet tall
+Ryan: 
+Vinson
+L
+P
+P
+P
+A
+P
+P
+P
+A
+P
+P
+P
+P
+Tasks: 
 Agenda
  Take attendance! (P if present, L if late, A if absent, E if excused)
 
 
-ProjectMembersBrief, informative summary of work done, emphasis on high-level problems and plans for next meeting
+Project
+Members
+Brief, informative summary of work done, emphasis on high-level problems and plans for next meeting
+
+
+
+
 
 
 
@@ -55,5 +87,7 @@ MechE:
 ? We need to 3D print
 ? Most important thing is fixing Bot #2 (the second orange one)
 
-Autonomous Meeting Notes9/4/2025
+Autonomous Meeting Notes
+9/4/2025
+
 

@@ -1,8 +1,3 @@
-# {"title": str, "content": str}
-# 1. load data
-# 2. vectorize
-# 3. chat chat chat
-
 import chromadb
 import os
 from dotenv import load_dotenv
@@ -51,28 +46,21 @@ while(True):
     
     num_results = 3
 
-    results = collection.query(
-        query_texts=[query], # Chroma will embed this for you
-        n_results=num_results # how many results to return
-    )
-    # results = collection.get(
-    #      where_document = {"$contains": "query"}
+    # results = collection.query(
+    #     query_texts=[query], # Chroma will embed this for you
+    #     n_results=num_results # how many results to return
     # )
+    results = collection.get(
+         where_document = {"$contains": "query"}
+    )
 
+    context_titles = ""
     context = ""
 
     for i in range(0, num_results):
-        context += f"{results["ids"][0][i]} \n"
+        context_titles += f"{results["ids"][0][i]} \n"
+        context += f"{results["documents"][0][i]} \n"
 
-    print(f"context: \n {context}")
+    print(f"context titles: \n {context_titles}")
 
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo", 
-        messages=[
-            # CONTEXT HERE
-            {"role": "system", "content": "You are a helpful RAG assistant for cornell's combat robotics team (CRC). Answer questions about our documentation, and explain your reasoning behind each answer. if you are not confident in your answer, say you dont know. Here is your context: " + context},
-            {"role": "user", "content": f"{query}"}
-        ]
-    )
-    print(f"question: {query}")
-    print(f"answer: {response.choices[0].message.content}")
+    
