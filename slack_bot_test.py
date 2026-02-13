@@ -4,6 +4,7 @@ from slack_sdk.errors import SlackApiError
 from dotenv import load_dotenv
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
+from oogabooga import *
 
 load_dotenv()
 
@@ -20,7 +21,12 @@ def mention_handler(body, say):
     print("Raw payload:", body) 
     # You can extract specific data, e.g., the user who mentioned the bot
     user_id = body['event']['user'] 
-    say(f"Hello, <@{user_id}>! I received your mention.")
+    #say(f"Hello, <@{user_id}>! I received your mention.")
+    #say(f"clap clap clap")
+    question = body['event']['text'].split('>', 1)[1].strip()
+    answer = bot.query(question)
+    say(f"Answer: {answer}")
 
 if __name__ == "__main__":
+    bot = Ooga()
     SocketModeHandler(app, os.getenv("SLACK_APP_TOKEN")).start()
