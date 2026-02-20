@@ -1,0 +1,223 @@
+How To Use The Bambu 3D Printer
+
+Getting Started
+
+Software
+
+Download Bambu studio app: https://bambulab.com/en/download/studio
+
+Download it on your phone too! It’s very helpful
+
+Sign in to CRC on Bambu Studio
+
+Username: combatrobotics@cornell.edu
+
+Password: coolR0bots13!
+
+In Fusion360, save the part you want to print as .step file (make sure it is NOT hidden)
+
+If it's a component in a multi-component file:
+
+Right click on component → export → select .step as the filetype
+
+NAME THE EXPORT NICELY!
+
+Include the name of the file it's from and the current version number of the file. 
+
+If it's a single-component file:
+
+File → export → select .step as filetype
+
+The filename should automatically have the version number
+
+Import .step file into Bambu Studio
+
+Enable supports if necessary (see the “Print Details” section for more information.)
+
+Located in the ‘Supports’ tab
+
+Tree style supports are great if you want them to be easier to remove
+
+Change plate to match plate in printer
+
+Slice your part
+
+If you print and receive the error message “print settings incompatible,” check the nozzle type and make sure it is X1 carbon
+
+After following all hardware steps, Print Plate.
+
+
+
+	Hardware
+
+Log into printer
+
+If you’re not logged in already, scan QR code in the app
+
+In the app, it’s under the ‘Me’ tab in top right corner next to the bell
+
+Change Filament
+
+Go to ‘Filament’ tab on printer
+
+Hit the unspool button (or something along those lines)
+
+Follow the instructions on the printer (just pull the spool off and pull it out of the tube) 
+
+If the old filament prints something while clearing out then use pliers to take it out
+
+Mount new filament where the old filament was.
+
+Feed filament through the tube as much as you can.
+
+Make sure that the filament is also fed through the little hole on the spool, as seen in the picture below. This prevents the filament from getting tangled.
+
+		
+
+Hit the “put in new filament” button on printer (or something along those lines)
+
+Follow the instructions on the printer
+
+If it's not sensing anything, push the filament into the tube more
+
+Change plate to match filament
+
+Each physical plate has the description of what materials you can print on it.
+
+Plates can be cleaned in the bathroom with hand soap every so often.
+
+Remember that the plates are double sided! The back of the plate is a different material than the front of the plate.
+
+Use a glue stick on the plate to help the print stick better.
+
+A consistent, thin layer is best; you can put it everywhere on the plate.
+
+If the plate already has glue, it's okay to add more!
+
+
+
+Cleaning the 3D Printer
+
+someone fill this i
+
+Print Details
+
+	Printing Everyday Objects/Not Structurally Important Robot Parts
+
+For the vast majority of projects, settings don’t matter beyond % Infill, which should be set to 15%, and Support Type, which should be set to either Auto or Auto Tree.
+
+However, make sure the filament and plate type match what material you’re using to print!
+
+
+
+Robot Parts/Structurally Important Materials:
+
+Infill: This is usually reliable at 15%, however can be adjusted to be higher if needed. This is where most of the weight will come from on components. This is useful with TPU, which has a variable flexibility based on how much infill there is.
+
+Walls: Walls are the number of layers between anything touching open air and infill. This is useful to provide a good amount of material for plastite screws to grip in, or to protect the most vulnerable to contact portions of the part.
+
+Profiles: If trying to get a durable part which can hold up under high loads or impacts, selecting Strength Profile will help immensely. Otherwise, Standard profiles will serve just fine.
+
+Common Issues
+
+The Filament Isn’t Extruding!
+
+Cause: Filament residue or metal fragments are caught in the extruder.
+
+Explanation: The 3D printer is not a perfect system, and because the hot end, or the part where the filament comes out, has such a small hole, residual fragments of filament, or other debris, can clog the hole.
+
+Solution:
+
+Remove the filament from the 3D printer.
+
+Take off the front of the cube that holds the extruder and hot end. It should be held on only by a few magnets.
+
+Use an allen key to remove the two screws which hold the hot end onto the rest of the printer. Do not detach any of the cables.
+
+Use an allen key to remove the fan which is attached to the side of the hot end. Normally, this fan cools the hot end down. Detach the cable which connects the fan to the rest of the printer.
+
+Put on gloves, and turn on the printer and heat the hot end to 250 degrees. This will begin melting any stuck plastic in the printer.
+
+Using the long, thin needle that comes with the printer, or any needle smaller than the diameter of the opening of the hot end (Typically .4 mm), begin poking through both ends of the hot end to remove any debris.
+
+I’ve found the most effective way to be to poke from the end where the filament is extruded from, and stick it as far through as possible.
+
+Repeat Step 6 until debris cleared and needle has no trace of residue.
+
+Reassemble the printer following the above steps in reverse.
+
+NOTE: If printer is still malfunctioning, the hot end may be too clogged to easily remove debris. In this case, repeat the above steps with a new hot end assembly.
+
+Resources:
+
+https://wiki.bambulab.com/en/x1/maintenance/replace-complete-hotend
+
+
+
+The Yellow Gear is Clicking and not Spinning!
+
+Cause: Hot end or extruder may be jammed, or filament spool may be caught.
+
+Explanation: The yellow gear you can see on the side of the printer head is part of the component which pushes filament through the printer, called the extruder. For a variety of reasons, this gear can get stuck or jammed, and when it clicks and doesn’t move, this can often be your first indication that extruding is failing.
+
+Solution:
+
+Remove filament from the printer.
+
+NOTE: This may not work with just pressing the unload filament button on the printer. If so, try manually removing the filament by pressing in the lever on the side of the printer to cut the filament, and pressing down on the part where the tubing meets the printer head to release the tubing. Throughout this process, you may be able to remove the filament from the printer by pulling manually.
+
+Take off the front of the cube that holds the extruder and hot end. It should be held on only by a few magnets.
+
+Use an allen key to remove the two screws which hold the hot end onto the rest of the printer. Do not detach any of the cables.
+
+At this point, you may observe the top of the hot end is clogged by a cut piece of filament. If this is the case, follow the instructions above.
+
+If this is not the case, follow the instructions below.
+
+Use an allen key to remove the extruder assembly from the printer head. This will be the part directly above where the hot end was. You may now detach the cables which connect the hot end to the printer head.
+
+Now with the completely removed extruder, begin disassembling the extruder by removing the plate held on by four screws.
+
+Continue manually disassembling the extruder until a blockage is uncovered.
+
+Reassemble extruder and reconnect printer by following the above instructions.
+
+NOTE: If problem persists, the extruder may be 
+
+Resources:
+
+https://wiki.bambulab.com/en/P1/maintenance/extruder-cleaning-guide
+
+https://forum.bambulab.com/t/filament-broken-in-extruder/35553
+
+
+
+The Filament Cutter isn’t Cutting/Is Repeatedly Clicking Or Getting Stuck!
+
+Cause: Something is likely jammed in the extruder or is making the extruder not work properly
+
+Explanation: The filament cutter is what cuts the filament so you can remove old filament and put in new filament. Sometimes, debris or filament gets caught in the extruder, which prevents the filament cutter from functioning properly.
+
+Solution:
+
+Follow above steps to disassemble extruder assembly fully.
+
+
+
+I Can’t Load Filament!
+
+Cause: Filament tubing improperly aligned/attached to printer head, or skill issue.
+
+Explanation: The clear white tubing is what guides the filament into the printer head from the spool. Occasionally, this will get out of alignment/lose connection to the printer head, which can make loading filament difficult. Occasionally, this can also be a symptom of the above three issues.
+
+Solution:
+
+Remove faceplate from printer head. This should only be held on by a few magnets.
+
+Depress the circular plunger where the tubing/filament enters the top of the printer head. If the tubing is attached, this should release the tubing.
+
+Try loading the filament without the tubing. If this works as expected, depress the plunger again to reattach the tubing.
+
+NOTE: If this step fails, examine the above instructions for a clogged extruder.
+
+Reassemble printer following above instructions in reverse.

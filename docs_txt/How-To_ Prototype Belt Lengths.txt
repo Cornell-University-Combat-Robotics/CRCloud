@@ -1,0 +1,25 @@
+How To Prototype Belt Lengths
+
+Why should we prototype? 
+
+While CAD is a very useful tool to model dimensions and positions of most things, belts are tricky because they have variable tension. In order to model this tension, we need to manually use trial and error before we can order any component which has belt axle holes in them. 
+
+Setup:
+
+You will firstly want to make sure you’ve ordered the belts you intend to use, the axles around which the belt will rotate, and any other component which is integral to the structure of the belt system, like bearings, wheels, shafts, or motors. 
+
+The goal with this is to make sure your trial and error system is as close to your final product as possible, so as to better replicate the tension in the actual system.
+
+You will additionally want continued access to a 3D printer, and PA6-CF or other similarly rigid filament.
+
+Prototyping:
+
+First, 3D print the upright as you have designed it in CAD based on the theoretical length and diameter of the belt.
+
+Of course, this will not be accurate the first time, but rather to use as a reference point for whether to adjust the axles further or closer.
+
+Assemble your system using the 3D printed upright, and use the tension in the belt in this setup to determine whether to increase tension by moving the axles further apart, or decrease tension, by moving them closer together.
+
+If unsure, repeat the below steps for both larger and smaller increments.
+
+Model an Isaac Arc™, similar to the one pictured below. The objective is to create an array of distances between the two axles in as small of a 3D printed object as possible, to save printing time and filament.

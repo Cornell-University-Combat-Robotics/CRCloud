@@ -1,0 +1,75 @@
+How to Ansys
+
+
+
+Downloading ANSYS
+
+Link to Student Ansys download
+
+There are a few different free versions of Ansys, but this is the most versatile and will probably suit your needs just fine. 
+
+Make sure you have enough space on your computer beforehand, or it won’t finish the download. 
+
+After download, you want to open the Ansys Workbench. If you have some trouble finding it, this forum question might help. 
+
+
+
+Subheading
+
+You may or may not need this, but here it is just in case. 
+
+If you’re listing steps
+
+to do something, 
+
+then maybe using a 
+
+numbered list
+
+might be helpful!
+
+Maybe even substeps too…
+
+
+
+Random Notes to be organized later
+
+Start from the Workbench
+
+Fluid Flow → Geometry → DesignModeler
+
+C-shape domain converges better than an oval-shaped domain
+
+Create domain in a sketch → turn sketch to lines → turn lines into surface → turn solid surface into fluid surface
+
+This surface represents the fluid surface
+
+Need to split domain into faces to make the mesh software work easier
+
+Workbench → Mesh → Mechanical
+
+Want smaller edges near the airfoil (subject)
+
+First cell height thickness
+
+First cell height at a y+ of 1 (to capture nonlinearity of flow near the surface)
+
+Need to pick a Reynolds number for the flow
+
+Re → mainstream velocity [m/s] → use this link to get y+ (shown as delta s here)
+
+If your cell height is less than this value, you’re good
+
+This will vary across the wall; make sure you check it after the simulation
+
+Boundary conditions
+
+Setup
+
+Make Polyhedral has better convergence quality
+
+Video on airfoils
+
+Video on 3D geometry
+
+An easier video on 3D geometry

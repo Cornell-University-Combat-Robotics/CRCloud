@@ -1,0 +1,263 @@
+Batteries
+
+Vendor List 
+
+
+
+Vendor Name
+
+Location
+
+Pros
+
+Cons
+
+SMC Racing Batteries-
+
+orders@smc-racing.com
+
+https://www.smc-racing.com
+
+USA
+
+Will make custom batteries if you email them
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CNC Milling
+
+Information
+
+	CNC milling and turning is best used when stock needs to be cut on 3 axes or more, and is used on plastic and metal stock. 
+
+CNC Vendor List
+
+
+
+Vendor Name
+
+Location
+
+Pros
+
+Cons 
+
+ZTLTech
+
+rita@ztl.com
+
+yedda@zintilon.com
+
+
+
+China
+
+Cheap
+
+Takes a good amount of time to ship, and can sometimes send parts with different hardness treatments than requested. Getting the part hardness tested to make sure it meets your specifications (Clark Machine Shop can do it locally) is necessary. 
+
+
+
+Closes for Chinese New Year, so important to order early
+
+PCBWay
+
+China
+
+Cheap
+
+Closes for Chinese New Year, so important to order early
+
+RapidDirect
+
+China
+
+Cheaper than PCBWay 
+
+Closes for Chinese New Year, so important to order early
+
+Fictiv
+
+USA
+
+
+
+Less expensive than Xometry, but still expensive
+
+Xometry
+
+USA
+
+Very high reputation
+
+Very expensive
+
+
+
+Laser Cutting/Water Jetting
+
+Information
+
+	Laser cutting and water jetting are two ways to cut 2D parts, as opposed to the 3 axes of a CNC machine. Both these methods functionally have the same purpose in combat robotics, but there are slight differences between the two. Laser cutting is more precise than water jetting, as the minimum cut size for a laser cutter is .15mm, while a waterjet has a minimum cutting slit size of .5mm. However, laser cutters are typically only able to cut materials up to around 35mm thick, while a waterjet can cut through parts as thick as 300mm. Additionally, waterjet cutting is more flexible and can cut a wider range of materials, while laser cutting excels at cutting materials (including but not limited to) glass, metal, wood, and plastic but cannot cut reflective materials due to cutting via heat. 
+
+Laser Cutting/Water Jetting Vendor List
+
+
+
+Vendor Name
+
+Location
+
+Pros
+
+Cons 
+
+SendCutSend (2D parts)
+
+USA
+
+Very fast shipping and turn around time, and one of the cheapest options
+
+
+
+Has most materials in most thicknesses
+
+Only cuts 2D parts
+
+
+
+Certain materials like Carbon Fiber and Titanium are prohibitively expensive
+
+
+
+Is not good for tight tolerances, due to nature of water jetting
+
+Fictiv 
+
+USA
+
+Can make 3D objects like billets
+
+
+
+For parts with tight tolerances, they are very reliable
+
+More expensive than SendCutSend and takes longer to send 
+
+Clark Machine Shop
+
+Cornell Campus
+
+Super quick, can drop stock off at Clark, can machine metals that Emerson cannot 
+
+Kinda expensive 
+
+
+
+
+
+Electrical Discharge Machining
+
+Information
+
+EDM is only used for parts whose designs demand tight tolerances, good surface finishes, undercuts, or other complex machining features. Some examples of where EDM is used include: cutting extrusions, rotary forms, or sharp internal corners, drilling micro holes or curved holes, engraving hard materials, or removing broken tools or fasteners from workpieces. 
+
+EDM Vendor List
+
+
+
+Vendor Name
+
+Location
+
+Pros
+
+Cons 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stock Vendors 
+
+Information
+
+	Stock vendors sell stock in order to be machined, and do not do any machining. However, they typically have a large amount of inventory for extremely cheap prices. 
+
+Stock Vendor List
+
+
+
+Vendor Name
+
+Location
+
+Pros
+
+Cons 
+
+Mc-Master Carr
+
+USA
+
+Has the most extensive catalogue of stock, with a variety of stock for machining, fasteners, and bearings. Ships extremely fast as well, with a turn around time of 1-2 days,  
+
+For more niche stock, comparing cost with other vendors might be useful. 
+
+Sackin Metals
+
+USA
+
+Cheapest vendor of Titanium stock anywhere. 
+
+Use of the machine shop and RPL is critical.

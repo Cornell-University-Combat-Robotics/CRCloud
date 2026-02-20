@@ -1,0 +1,243 @@
+How to machine
+
+The basics
+
+	This link leads to videos that explains how to use the basic functions of the manual mill and manual lathe, along with other machinery like the belt sander and the horizontal bandsaw. Instead of me explaining how to machine, watch these videos; if you’re looking for information about a specific operation (i.e. tapping), open the video and refer to the timestamps in the first few seconds of the video. If a commonly used operation is not explained in these videos, it will be explained in this section. 
+
+The Cornell Official Emerson Machining Manual also has a lot of information that may be useful. 
+
+How to zero the z-axis on the manual mill
+
+NOTE that every single time you change your tool, you have to re-zero your z-axis! So adjust your order of operations accordingly…
+
+Find the shim paper hiding around the shop somewhere—it looks like the picture below. (It looks like tissue paper, but it’s shiny.) Alternatively, if you can’t find shim paper, you can use your part drawing. 
+
+	
+
+Using the rough z-axis adjuster that is at eye-level, position your part so it is sort-of close to your tool. The precise z-axis is a pain to move, so you’ll be happier the less you’ll have to move it. 
+
+LOCK THE ROUGH Z-AXIS by turning the little knob that’s near the big handle (see the figure below). You do not want this to move from here on out, otherwise you’ll lose your zero!
+
+
+
+Put your shim paper/part drawing between your part and the tool. Slowly move the precise z-axis (henceforth just known as the z-axis) upward while wiggling your paper simultaneously. The moment the paper gets snagged by the tool and stops moving, don’t move the z-axis anymore!
+
+Zero the z-axis by loosening the grippy part of the handle and rotating the marker part of the handle until the number ‘0’ lines up with the small line. Then, re-tighten the grippy part. (By grippy part, I mean the round part that feels like it has a lot of grip.)
+
+		
+
+If you need your depth to be extra precise, offset your z-axis by the thickness of your paper. You can measure this thickness using calipers. (The shim paper is 0.001” thick.)
+
+You have now zeroed your z-axis! Congrats! Remember that each line on your z-axis handle is 0.001” and there are 100 marks per rotation—therefore, 1 full rotation of the z-axis handle is 0.1”.
+
+If your depth is 0.5”, rotate the handle 5 times.
+
+Etc etc etc…
+
+
+
+How to drill off-center holes in a circle
+
+	For example:
+
+
+
+	Since the lathe only drills center holes, you’ll need to use the mill. Follow the steps below:
+
+Find a v-block that fits around your part such that the circle is clamped between the v-block and the vise, as shown in the picture below. The part should be resting on parallels, as always. Make sure your part is sticking above the v-block and the vise so you have material you can zero off of. 
+
+		INSERT A PICTURE HERE
+
+Set up the wiggler tool for zeroing. 
+
+For the following step, do not adjust the y-axis!
+
+Touch the wiggler to one side of the circle as you would normally. Zero this side. 
+
+Move the wiggler to the other side without touching the y-axis and touch the wiggler to the other side. DO NOT ZERO. Instead, hit the center-line button (which looks like the picture below) and then hit ‘X.’
+
+
+
+The x-axis is now zeroed on the center of your part. Repeat step 3 for the y-axis by using the wiggler tool on the top and bottom of the part without moving the x-axis!
+
+The mill is now zeroed in the center of your part. From here, you can drill all your holes. Hopefully the hole placements in your part drawing are defined using ordinate dimensions from the center! 😀
+
+
+
+How to machine plastic
+
+	DON’T 
+
+Common issues
+
+My tap broke!
+
+Oopsie! That sucks. Unfortunately, this probably means that your part is no longer usable (though this may vary on a case-by-case basis). Since the tap is made of a much harder metal than your drill bits, there’s no way to drill through it. You may now take this part home and put it on your wall of failures. 
+
+There are 4 common culprits that lead to tap breaking:
+
+You used too much pressure: When you tap a hole, you should not be pushing downward at all. If you have to use force to get your tap to cut threads, then something is wrong. The only force you should apply is horizontal to twist the tap in a circle. 
+
+You used too much torque: Try not to use a tap handle that is way too big for the hole you’re tapping. There’s no real metric for this, just try to find a tap handle that feels right. If you use one that’s way too big, there’s a bigger chance that small errors can cause your tap to break (like not being completely aligned or hitting the bottom of the hole). 
+
+You continued tapping even when you reached the bottom of the hole: This aligns with #1. Do not use force to go down! When you reach the bottom of the hole or feel any resistance, stop. If you use a “bottoming tap” (which looks like the first picture) as opposed to a “taper tap” (which looks like the second picture) then when you hit the bottom of the hole, your tap will stop instantly.
+
+			
+
+
+
+Your tap wasn’t straight: This usually happens if you’re tapping by hand (which is a bit risky, and I don’t recommend it). If you absolutely must tap by hand, always have someone else watching you from multiple angles to make sure you’re tapping straight. 
+
+
+
+My parallels keep moving and I can’t get them to stay still!
+
+		This could be for a bunch of reasons. I’ll list a few below:
+
+Your part isn’t square! If it’s not sitting flat against the parallels, it’ll look like the picture below. If possible, try to choose an orientation that consists of the 3 most square sides of your stock so it fits nicely, like the second picture. If there are no 3 sides that are square enough, you’ll have to face one side of your stock, rotate, face another side, rotate again, face a 3rd side, and repeat this process until your part is square enough to secure those parallels. 
+
+	
+
+
+
+You didn’t mess with it enough! Sometimes it just takes some wiggling. Something I like to do (which usually works) is press my hand down on the part while I tighten the vise, which helps to secure it a bit better before I use the mallet and then tighten again. 
+
+You didn’t whack it with the hammer hard enough! Give it a really good smack. Don’t be shy, you know you want to. Make sure to smack it when it’s secure in the vise—if you hit it and it’s not secure, it’ll just go flying (or make a really loud noise). 
+
+
+
+I turned on the machine and it made a really loud and scary noise!
+
+	This is probably because your machine—whether you’re using a lathe or a mill—wasn’t
+
+ in gear. It’s similar to a bike—if you change gears but the chain slips or gets stuck, no more bike riding for you. 
+
+	On the mill, there is a small lever that you move if you want to shift from high range to low range. If you don't move the lever all the way to one side, your mill will make a terrible noise. Make sure the lever is all the way to one side—if it’s stuck, spin the collet holder in circles until it moves. Spinning the collet holder will shift the gears inside the mill until they align. If you’re spinning and the gear still isn’t locking it into place, try putting it back into the other gear, running it for a few seconds, turning it off, and then trying again. 
+
+
+
+On the lathe, it’s a similar issue—you’re probably stuck in-between RPM ranges. Make sure the lever is completely on a single RPM range—if it’s stuck, put the lathe in neutral (by shifting the “on” lever to its middle position) and spin the lathe chuck until the lever clicks into place. 
+
+Feeds, Speeds, and Step Sizes
+
+	This video explains how to calculate RPM based on your tool, part size, and material. The details of this video are summarized below. 
+
+
+
+
+
+
+
+	SFM values can be found in the table below. 
+
+For a mill, the “Diameter” is the size of the cutter (drill bit). On the lathe, “Diameter” refers to the size of the stock if you’re cutting the outside; if you’re boring or drilling a hole, “Diameter” will be the size of the hole. 
+
+	The constant 3.82 is 12/π; it converts surface feet into surface inches. For manual machines, you can replace the 3.82 with the number 4 to make calculations easier. Manual machines will most likely not have the exact RPM value you need, but this formula will give you a good range. Based on what the machine provides, always choose a number under your calculated RPM. 
+
+
+
+	The SFM table below is based on high-speed steel (HSS) tools. For carbide tools, you can double these numbers. If you’re not sure what type of tool you have, assume it is an HSS tool. 
+
+
+
+SFM Values for Various Materials
+
+
+
+Mild steel (i.e. any steel that has not been hardened)
+
+90
+
+Tool steel
+
+50
+
+Mystery steel (i.e. steel stock that you found, but you’re unsure of the alloy or treatment)
+
+50
+
+Hardened steel
+
+50
+
+Aluminum
+
+150
+
+Brass
+
+150
+
+Bronze
+
+100
+
+Stainless steel
+
+40
+
+
+
+The following quick guide is for use with the manual machines in Emerson. For any other operation requiring any other tool, refer to the calculations above. 
+
+
+
+RPM Quick Reference for Aluminum Only
+
+
+
+Machine
+
+Tool/Operation
+
+RPM
+
+Step Size [inches]
+
+Manual lathe
+
+Turning/facing tool
+
+630
+
+0.05
+
+Manual lathe
+
+Boring bar
+
+630
+
+~0.005 (depends on project needs)
+
+Manual lathe
+
+Cutoff tool
+
+125
+
+Slow
+
+Manual mill
+
+Milling/facing
+
+850-1000
+
+0.03
+
+Any
+
+Drilling, for bits up to ½” in diameter
+
+850-1000
+
+N/A (Utilize peck drilling)
+
+Any
+
+Drilling, for bits ½” diameter and above
+
+~200
+
+N/A (Utilize peck drilling)

@@ -1,0 +1,137 @@
+How to design an asymmetric spinning weapon
+
+
+
+An asymmetric weapon can achieve twice the bite depth as a symmetric weapon at the same RPM. This is helpful for being extra destructive in the box. But it can be tricky to design one, because you have to make sure it spins about its center of mass (CM). In a symmetric weapon, you can just put the bearing hole in the visual center of the part, but you can’t do that when you go asymmetric. This guide explains how to design an asymmetric weapon, including a nice way to get Fusion to automatically position the hole.
+
+Prerequisites
+
+If you have a basic understanding of parameters and are good at making fully constrained sketches in Fusion, this should be relatively straightforward.
+
+Overview
+
+This guide shows you how to do the following:
+
+Set up a new Fusion file with a point that is positioned based on specifically defined user parameters. This will be the point you reference in any features that need to follow the CM.
+
+Install a script that updates the CM parameters to match the coordinates of the actual center of mass.
+
+Sketch a rough version of the weapon profile, keeping it simple and anchored to the origin, and include a bearing hole anchored to the CM point. Extrude the profile to create a body with a center of mass.
+
+Run the script and verify/debug the model as you adjust your design.
+
+Step 1: Set up the Fusion file
+
+In order for later steps to work properly, you need to create a new Fusion design file with nothing else in it. First, create five user parameters with these exact names and units:
+
+CM_x (units: cm)
+
+CM_y (units: cm)
+
+CM_z (units: cm)
+
+CM_inaccuracy (units: cm)
+
+CM_iterations (no units)
+
+The script won’t work properly unless all five parameters exist and are exactly as shown above. You’ll have to provide a value for each one as you create it, but these initial values don’t matter to the script, so do something like this to keep it from overlapping with the origin point:
+
+CM_x = 1
+
+CM_y = 2
+
+CM_z = 3
+
+CM_inaccuracy = 0
+
+CM_iterations = 0
+
+Now that you have the parameters, create a point that follows them (the CM point). Make three Offset Planes defined using the parameters:
+
+
+
+
+
+
+
+
+
+
+
+Then define the point as an intersection of those planes:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Then you can hide the planes and rename your point, like this:
+
+
+
+Now you can project this point into any sketches you make.
+
+Step 2: Install the script to make the CM point actually follow the CM
+
+Fusion lets you write custom scripts in Python or C++, which can interact with Fusion in many ways. The script you’ll use looks up the center of mass of the file and writes its XYZ coordinates to CM_x, CM_y, and CM_z (but only if these parameters already exist—you’ll get an error if they don’t). The script is available in a zip file: CenterOfMassParameters.zip.
+
+
+
+Install the script by downloading the zip file and moving it to...
+
+on Windows: %AppData%\Autodesk\Autodesk Fusion 360\API\Scripts
+
+on Mac: ~/Library/Application Support/Autodesk/Autodesk Fusion/API/Scripts
+
+Then extract it there. It should end up in its own folder called CenterOfMassParameters.
+
+Step 3: Sketch and extrude the weapon blade
+
+Once you know what general shape you want out of the weapon, you can sketch it on one of the origin planes. To keep the profile stable when the script updates the center of mass, you should constrain at least one major feature at the origin. Otherwise, feel free to constrain features to the CM point and each other—just keep things simple so you can fix it if something goes wrong during a center-of-mass update.
+
+
+
+Having sketched the profile, extrude it to create a body that has a center of mass. The script won’t work unless there’s a body in the file.
+
+
+
+Note: you can add other parts to the file if, for example, you want the weapon shape to account for the weight of an off-center screw. Just make sure every part (including the weapon blade itself) is the right material/density/weight.
+
+Step 4: Run the script and verify the results
+
+Once you have the script installed, you can access it through the menu shown in the picture below, or by pressing Shift+S and running CenterOfMassParameters. Fusion should find the script automatically when you open the Scripts and Add-Ins dialogue, but if CenterOfMassParameters doesn’t show up, try restarting Fusion.
+
+
+
+
+
+Since you’ve set up the document well in step 1, you should be able to just run the script by clicking on it and clicking Run. This will update CM_x, CM_y, and CM_z to match the actual center of mass of the part.
+
+
+
+This script iterates for you, and here’s why: if you’ve dimensioned any features based on the center-of-mass point you made, those features will move each time the script updates the center of mass. This, in turn, will change the object’s center of mass. To deal with this, the script runs iterations of this process until either:
+
+The CM moves less than 0.01 cm from the last iteration, or
+
+It runs 50 iterations. If this happens, you need to change (most likely simplify) your design to make the iterative process converge.
+
+You can tweak the tolerance and max iteration count by editing the code and saving.
+
+Important: check that the script is working properly!
+
+There’s always a chance something has changed about Fusion’s API, or that something about your file is tripping up the script and giving incorrect results. You can check for this by showing the center of mass point in a way that doesn’t rely on the script.
+
+
+
+You can find an option to display the center of mass in the Utilities tab, Inspect menu, as shown below. Unexpectedly, this non-selectable display object will only update when you orbit your view around the part. Make sure to orbit frequently when checking for discrepancies.

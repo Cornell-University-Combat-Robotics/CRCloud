@@ -1,0 +1,65 @@
+How to make a DXF
+
+
+
+A DXF file (Drawing Exchange Format file) is a vector file that’s used to share drawing data between different applications. A DXF file is needed for the following 2D manufacturing methods: 
+
+Laser cutting
+
+Water jetting
+
+For more information on 2D manufacturing, see How-To: Design for different manufacturing methods. 
+
+
+
+How to make a DXF file in Fusion
+
+Let’s say I have this part that I would like to get manufactured from SendCutSend: 
+
+
+
+
+
+Make a projected sketch
+
+Click on the face that the laser (or water jet) will be cutting into (i.e. the face with the important geometry). 
+
+
+
+Hit ‘Create Sketch’. 
+
+Hit ‘P’ on your keyboard to activate the ‘Project’ feature. 
+
+Click on the same face you selected before and hit ‘OK’. 
+
+You should see a sketch of the face in purple. 
+
+
+
+Select ‘Finish Sketch’. 
+
+
+
+IMPORTANT NOTE: Everywhere you see a purple line is where the laser (or water jet) will cut. If your sketch contains a line that goes through the part (like the picture below) then your part will be cut into 2 pieces! Always double check your sketch to make sure that it only contains lines that you want cut, and that it is not missing any important features. 
+
+
+
+
+
+Save the sketch as a DXF
+
+Right click your sketch in the browser on the left. 
+
+Rename your sketch to ‘DXF’ so that others know what the sketch is for. 
+
+
+
+Right click on ‘DXF’ and select ‘Save as DXF’.
+
+
+
+Save the sketch wherever you’d like with a name that makes sense. 
+
+
+
+You’re done!

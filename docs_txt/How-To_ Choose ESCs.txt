@@ -1,0 +1,35 @@
+How to choose ESCs
+
+
+
+Prerequisites
+
+You will need 1 ESC per motor. In order to choose your ESC, you need to know which motors you are using. 
+
+
+
+Choosing an ESC
+
+Your motor should have a maximum continuous current rating. Find it. (For example, this motor has a max continuous current of 35A.)
+
+Find an ESC (preferably not from eBay) that has an amperage rating that is at least this value. 
+
+For the example above, you would want a 35A ESC or greater. \
+
+Make sure that the S rating is the same as your battery. 
+
+Make sure that it’s compatible with your motor type (brushed or brushless). 
+
+That’s literally it. 
+
+
+
+Bidirectionality
+
+If this ESC is for your drivetrain, you must make sure that your ESC is bidirectional. If it is not explicitly stated as bidirectional, it is not recommended that you order it. 
+
+If it’s not bidirectional, you will not be able to drive backwards. 
+
+For your weapon, this might be something to keep in mind, but may not be a requirement. 
+
+For example, most spinning weapons only need to go in 1 direction. Lifters, however, may need to move in both directions in a controlled manner.

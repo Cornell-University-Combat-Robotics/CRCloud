@@ -1,0 +1,77 @@
+How to safely test your robot in the test box
+
+
+
+Safety is the most important thing to keep in mind during testing. Even when you are testing a system that’s already been tested before, problems such as sparking or fires can happen at any time, so always follow safety protocols!
+
+
+
+BEFORE TESTING:
+
+Make sure you are aware of the nearest fire extinguisher. For LiPo batteries, you should use a Carbon-Dioxide extinguisher or an ABC Dry Chemical Extinguisher 
+
+Using water on these components will light them on fire more. Please don’t do that.
+
+Prepare the test box. Robots should always be tested in the textbox. Even if the weapon will not be spinning, the testbox can help smother and separate you from the robot in the event of it lighting on fire. 
+
+Removing the weapon lock should be the last thing you do before immediately shutting the test box. The safest order of operations is:
+
+First, turn on the transmitter
+
+Second, turn on the power switch
+
+(Doing this in the opposite order may result in interfering with the fail-safe on the transmitter.) 
+
+Finally, remove the weapon lock and IMMEDIATELY close the test box.
+
+Not following this order can lead to ESCs lighting on fire, injuries from a weapon erroneously spinning, and destruction of electronics.
+
+
+
+
+
+DURING TESTING: 
+
+Do not open the text box under any circumstances. Opening the textbox can lead to shrapnel or fumes injuring someone. 
+
+If a hole opens up in the textbox, cease testing the robot immediately. Testing must be paused until the hole can be fixed. It is necessary to have a fully enclosed testbox. 
+
+
+
+
+
+WHAT TO TEST FOR:
+
+According to the Riobotz Combot Tutorial, the most common causes for a robot to lose a match are:
+
+Battery connectors or other wires getting loose 
+
+Solution: Use good quality connectors, always use ring terminals over fork terminals, and use liquid electrical tape or hot glue
+
+Motors, batteries, or other components getting loose
+
+Solution: Avoid using nylon ties or clamps, tighten critical screws before each match, use threadlockers or spring locks
+
+Chains coming off from sprockets
+
+Solution: Make sure sprockets are well aligned, avoid exposed sprockets, or replace chains with timing belts that withstand larger misalignments.
+
+Heavy impacts due to fall damage:
+
+Solution: Test robot by dropping it from 6ft up, which is around the highest one of our robots would be flung into the air.
+
+Improperly charged or low capacity batteries:
+
+Solution: Always use electronic chargers, check battery voltage before each match, and calculate AND test robot’s consumption under real conditions. 
+
+Smoking ESCs:
+
+Solution: Always match the maximum acceptable current in the controller with the motor specs, if a wheel or a spinning weapon gets stuck, turn it off to avoid stalling the motor. 
+
+Rupture of rivets, screws, nuts:
+
+Solution: never use rivets, always use hardened steel screws and nuts (class 8.8 or 10.9 for hex screws, class 12.9 for Allen, and appropriate diameters for what they will be fastening). 
+
+Low-clearance robots getting stuck in the arena:
+
+Solution: Make sure you have a ground clearance of at least ¼” (preferably ⅜”), use flathead screws on the bottom of the robot to ensure they do not get stuck, and don’t forget the wear and tear of wheels.

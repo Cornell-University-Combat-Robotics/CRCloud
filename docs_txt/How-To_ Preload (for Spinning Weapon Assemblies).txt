@@ -1,0 +1,95 @@
+How to preload (for spinning weapons)
+
+
+
+Proper preloading is an essential step when designing and assembling spinning weapons: with the right preload, a weapon stack can spin freely while remaining very strong against impacts. When the preload is too tight, the weapon doesn’t spin freely, and when the preload is too loose, the bearings can shake themselves apart.
+
+
+
+This preloading guide applies only to spinning weapons that rotate around stationary (“dead”) shafts, which are typically steel bolts. If you’re designing or working with a different kind of spinning weapon, preloading may still be important, but you’ll need to do more research to make sure you’re applying it in the right way. Additionally, preloading is not essential for all bearing types, but for angular-contact bearings (ACBs), it is essential. This guide focuses on preloading with ACBs, using Rosie’s weapon assembly as an example (labeled in the figure below).
+
+
+
+
+
+But what is preloading anyway?
+
+A bearing is preloaded when there is a constant axial load applied to it by the assembly, as shown below. F1 is applied to the outer race, and F2 is applied to the inner race, forcing those races towards each other to keep the balls from being able to rattle. For ACBs like this, it’s possible for the bearing to rattle itself apart at high speeds if there is no preload. 
+
+
+
+However, too much preload can cause the bearing to seize up. If F1 and F2 are too large, the balls and the races will be squeezed tightly, forcing them to deform as they rotate. This causes unnecessary wear, and at high speeds, it can create enough heat to melt the plastic holder that keeps the balls in place. So we want to get F1 and F2 (the preload force) just right.
+
+How do we get the preload force just right?
+
+Short answer: by sandwiching them with perfectly sized spacers. To see what this means, let’s look at a cross section of the complete weapon assembly. The bolt’s head and the nut squeeze the assembly, and the small purple arrows show the force propagating toward the central area between the two ACBs.
+
+
+
+
+
+
+
+Analyzing this from the left end to the center:
+
+The bolt head (red) pushes inward on the chassis plate (red outline).
+
+The chassis plate pushes on a spacer (yellow).
+
+The spacer pushes on the inner race of the LEFT ACB (orange).
+
+The ACB pushes on two things:
+
+The preload spacer (red)
+
+The force travels directly through the inner race.
+
+The weapon blade/pulley assembly (cyan/green)
+
+The force travels from the ACB’s inner race through the balls and outer race before actually pushing on the weapon blade.
+
+Analyzing this from the right end to the center:
+
+The nut (blue) pushes on the chassis plate (red outline).
+
+The chassis plate pushes on a spacer (yellow).
+
+The spacer pushes on the inner race of the RIGHT ACB (orange).
+
+The ACB pushes on two things:
+
+The preload spacer (red)
+
+The force travels directly through the inner race.
+
+The weapon blade/pulley assembly (cyan/green)
+
+The force travels from the ACB’s inner race through the balls and outer race before actually pushing on the weapon pulley.
+
+
+
+From these analyses, we can see there are two things being compressed in the center:
+
+The central spacer, between the inner races (length A)
+
+The weapon blade/pulley, between the outer races (length B)
+
+If A is shorter than B, then when the nut is tightened, the force will travel through the balls and outer race of the bearing (this is a preload). If A is longer than B, then when the nut is tightened, the force will only go through the preload spacer (the balls will be loose; there is no preload).
+
+
+
+This leaves us with two ways to adjust the preload on a weapon assembly:
+
+By tightening or loosening the nut: this changes the total compressive load through the system, and it’s very easy to adjust without disassembling anything. However, loosening the nut too much can weaken the system overall, and no human can tighten it beyond a certain point.
+
+By changing the length of the preload spacer: since the metal parts compress slightly, it’s possible to distribute the load between the preload spacer and the balls of the ACBs. By tweaking the length, we can put 80% of the load through the preload spacer and 20% of the load through the balls. This lets us tighten the nut more, keeping the assembly strong without applying too much preload to the ACBs.
+
+How do you change the length of the preload spacer without re-manufacturing it? By adding or removing shims. Shims are like extremely thin washers with precise thicknesses, and you can add them between the preload spacer and the inner race of an ACB. This is often tricky and fiddly to do, because the spacer is (and must be) in the center of the weapon assembly.
+
+Super fun exercise that will haunt you until you figure it out
+
+Now that you understand the principles of preloading, try analyzing the forces in Beater B. Barker’s weapon/flywheel assembly. This one has two pairs of ACBs, so it’s twice as fun!
+
+
+
+Take a screenshot of the cross section below and draw out the little force arrows. Can you find the preload spacer here? Where would you add shims?

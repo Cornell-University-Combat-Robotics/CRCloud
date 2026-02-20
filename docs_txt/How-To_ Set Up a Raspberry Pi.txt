@@ -1,0 +1,111 @@
+Setting up Raspberry Pi on a newly bought Pi
+
+Flashing (for a brand new Pi) 
+
+If newly bought, the Pi is just empty, so you need to download the OS to start using it:
+
+Get an adapter that can connect the SD card (typically an empty one)  to the desired device 
+
+Download the Raspberry Pi Imager OS (official website) 
+
+The screen should appear then Select the device and the image model 
+
+The image model could be either from an SD card that was stored on your computer or the following OS provided 
+
+
+
+Once you have selected the options, press next and wait for the imager to finish writing 
+
+Once completed, remove the SD card and put it into the desired Raspberry Pi then plug in the power supply
+
+The Pi should be on and would need to be hooked up to a monitor (needs a dongle for HDMI), mouse and keyboard
+
+Pi should start booting up and display on the screen 
+
+YAY, you successfully started up a Pi now go be a menace 
+
+Imagining and Writing 
+
+Similar to copying the information from a previous SD (imaging), which can either be pasted on a
+
+new or used pi (writing) 
+
+
+
+Imagining (either from a previous or new Pi) 
+
+Reading (for Windows)
+
+Take the SD card from a current pi and connect it to your laptop 
+
+Download the Win32DiskImager
+
+The following page should show up
+
+(To confirm if the SD is in, under “device” it should show random symbols)
+
+ 
+
+Select the folder button in the “image file” box, create a file, and save
+
+Return to the page and select “Read”
+
+Estimated time should take within minutes or less than an hour 
+
+*if hour >1 select cancel, issue I’m not sure of (ask Sebastian) 
+
+
+
+Writing (Putting information from a previous SD onto a new SD card) 
+
+Follow the “Imaging” direction to have the copy of the previous SD card file that you want to have write on a new SD
+
+Take the new SD you want to write over and plug it into the computer with the file
+
+Open Win32DiskImager 
+
+In the “Image File” click the folder icon and select the Image of the previous SD 
+
+Select “Write” to start copying over the information to the new SD
+
+Once the file is complete you have identical SD cards and you can use it how you see fit, Yay!
+
+
+
+Software Configuration for Remote Access
+
+On-board Pi Information
+
+Connect the Pi to a monitor, keyboard, and mouse
+
+Connect the Pi to the RedRover network (more steps involved, but I forgot, sorry -Ethan)
+
+After connecting successfully to the network, the IP address will pop up briefly
+
+Otherwise, to access the IP address:
+
+Open the terminal
+
+Type ifconfig
+
+You should see a terminal output with three sections; under the last section, labelled wlan0, write down the IP address following inet, which should have the form xxx.xxx.xxx.xxx
+
+In the terminal, type sudo raspi-config
+
+Navigate to “Interface Options”, then “VNC”, and press “Yes” to enable VNC.
+
+
+
+On Your Computer: Windows
+
+On your computer now, be sure you have RealVNC installed
+
+RealVNC might prompt you to make an account; simply continue to the account creation, then press cancel
+
+In the top bar, enter the IP address previously saved
+
+When prompted, use the current Raspberry Pi credentials to sign into the Pi
+
+NOTE: Although multiple users can connect to the Pi remotely, they are all functionally controlling the same computer; thus, operations performed by one user will be reflected across all connected devices.
+
+NOTE: The IP address is also liable to change after turning off and on again, so if connection fails, double check you have the right IP address

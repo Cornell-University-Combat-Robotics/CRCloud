@@ -1,0 +1,241 @@
+How to design a drivetrain
+
+
+
+This document covers: 
+
+How to choose a design
+
+Determining belt lengths
+
+Designing drive pulleys
+
+Choosing a drive motor and gearbox combo
+
+
+
+Drive System Design Guide
+
+Drive Calculation Spreadsheet: https://bit.ly/JustCuzDriveCalc
+
+For the calculator you need to know the # of wheels, # of motors, wheel diameter, and motor specs
+
+Main parameters that determine the needed motor/gearing
+
+Weight class (how much weight can be dedicated to drive?)
+
+Drive Strategy - control, wedge, or other?
+
+Speed is actually a lower priority for a control bot than a vertical spinner - spinners need to achieve good bite and escape from a bad position
+
+Pushing power/low end torque are critical for control bots, especially w/o wedges
+
+Generally a wedge, lifter, grabber, or other control bot will want more drive power than a spinner
+
+Determining how much drive power is needed is a function of the desired speed and torque for your chosen wheels
+
+According to Ask Aaron’s drivetrain guidelines, you will want at least 1.5-2X the torque required to spin the robot wheels to prevent stalling/overloading the motor while pushing an opponent into or against a wall. 
+
+Note: More torque with a reasonable top speed >> stupid fast top speed
+
+Having the ability to go 100mph if you only have room to accelerate to 20mph means leaving lots of torque on the table
+
+Combat arenas are small - acceleration and pushing power is often far more important than speed, and both are only related to torque and traction
+
+Transferring Power to Wheels - Mechanics and Reductions
+
+Direct drive:
+
+Prosoften risky and fragile, but very simple; no external gearing
+
+Supporting the other end of the axle is recommended - easy to destroy the motor with impacts
+
+Basically just don't even think about it with an ungeared motor unless you have a very special circumstance (ultra low kV brushless yolodrive???)
+
+Belt/chain drive
+
+Simplest/easiest way to run 4WD off 2 motors, no tensioning needed if done properly
+
+Generally easy to attach pulleys to a motor shaft
+
+Typically can get no more than 3:1 per stage
+
+Timing belts or chains are often best for 12lb and up as they won't slip, but round belts work great for smaller bots with lower torque
+
+I managed to use O rings in place of welding my own PU belts in Draconid given sufficient stretch/tension, but this can be difficult to size properly
+
+Note: all plain rubber belts lose significant tension over time
+
+3D printing pulleys for belts works extremely well
+
+Planetary Gearboxes - Pricey but compact and robust
+
+Not good with impact loads, but often beefy output shafts that easily handle shear loads (best to support the axle if you can though)
+
+Handle a ton of torque and very compact for the high ratios
+
+Extremely expensive to get many P60s or Versas, expect $50-90 per drive side in a 12lb+ bot
+
+Often needs an adapter to use brushless, but usually someone has done it before
+
+Can drive a central pulley and belt to 4WD, or drive one wheel directly and belt to second for extra redundancy (see #5)
+
+Gears
+
+Metal gears are expensive but 3D printing is a great option (see Draconid)
+
+Less impact tolerant than belts, but can be designed/made to spec
+
+Pretty compact, but very restrictive on center-center
+
+Unlike with pulleys/chains, it's not always possible to change ratios without changing center-center
+
+3D printed herringbone gears have a larger root area, stronger tooth profile
+
+Need 3 gears per side to reverse direction for 2 motor 4WD
+
+Some guesswork can be involved in determining the width and pitch/module needed
+
+Combinations of the above!
+
+No harm in combining two different approaches, as long as you’re careful
+
+Can get the best of both worlds by combining gears with belts/chains - high reduction with shock isolation
+
+It can be much cheaper to replace a shaft and pulley than a two stage gearbox
+
+
+
+Where to Buy Mechanical Components
+
+You can buy Chain Sprockets, Gears, Pulleys, wheels and more at Andymark, Vex, ServoCity, McMaster, and more!
+
+P60/P80/P61 gearboxes are at Banebots, and Versaplanetary is Vex. 
+
+Wheels are available from tons of hobby stores, Amazon, Fingertech, Robotshop, several of the above vendors, etc. 
+
+Also take a look on Ebay, Banggood, or other Chinese retailers but YMMV
+
+Brushless motors are available on Amazon, Hobbyking, Banggood, and any drone/RC hobby store
+
+Wheels, wheels, wheels!
+
+Softer rubber is more grippy but less durable
+
+Foam tires are able to take direct hits without trashing your bot unlike rubber (see: D2 kit wheels, Fingertech wheels, lite flights)
+
+Custom silicone cast tires are soft and grippy and often the best performing, but require a lot of experimentation, which means a lot of $$$ and time
+
+Be sure to think about how to actually transmit torque to the wheels
+
+Live shaft turning with the wheel
+
+Set screws on flats (Fingertech hubs)
+
+Keyed hubs (Banebots and similar, common for larger bots)
+
+D or Hex shaft/bore, or spline (also Banebots, VEX stuff, Servocity hubs)
+
+Dead shaft - axle doesn’t spin
+
+Bolt through to pulley/gear (Conduit)
+
+Custom 3D printed things (Draconid)
+
+
+
+Sources:
+
+Team Tentacle torque Calculator: http://runamok.tech/squid/newtorquecalc.htm
+
+AskAaron Drivetrain Gear Ratios Article: http://runamok.tech/AskAaron/optimum.html
+
+Brushless motor torque estimation article
+
+
+
+
+
+Determining belt lengths
+
+
+
+Required Prerequisite:
+
+Center to Center Distance Between Drive Pulleys
+
+Estimate of Drive Pulley Diameter
+
+Later, will need Final Drive Pulley Diameter
+
+
+
+
+
+Designing drive pulleys
+
+
+
+
+
+Choosing a drive motor and gearbox combo
+
+
+
+Use this drivetrain speccer template
+
+(If you’re designing a spinning weapon, can also use this template)
+
+
+
+Subheading
+
+You may or may not need this, but here it is just in case. 
+
+
+
+Equation Derivations 
+
+You may or may not need this, but here it is just in case. 
+
+
+
+Time to top speed (assuming perfect grip) and final speed calculations
+
+
+
+Given:
+
+Pushing Force F [lbf]
+
+Bot Mass m [lbm]
+
+Max velocity  [mph]
+
+
+
+Solve:
+
+For velocity curve over time: 
+
+
+
+
+
+
+
+Designing cleats
+
+
+
+
+
+
+
+Designing a walker
+
+
+
+
+
+Recommended materials

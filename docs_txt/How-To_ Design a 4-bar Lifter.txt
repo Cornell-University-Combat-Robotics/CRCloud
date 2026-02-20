@@ -1,0 +1,43 @@
+How to design a 4-bar lifter
+
+
+
+A 4-bar lifter is an optimized type of lifter that allows the robot to lift both up and out. 
+
+
+
+
+
+
+
+Why use a 4-bar lifter? 
+
+This site has more information on why this type of lifter is good. 
+
+
+
+Pros: 
+
+A 4-bar linkage can be designed to push forward and up as it extends rather than drawing back and away from the opponent as it rises. 
+
+The extension of the lifter arm can be tailored to keep a fairly constant load on the drive motor as it rises, reducing the motor torque requirement while increasing lift speed. 
+
+The mechanism can be made very compact when retracted, so it can stay away from damage from your opponent's weapons but still able to extend to good height when needed.
+
+Having a hard lower limit means that the lifter arm retracts into the same lowered position every time, so there is no need to manually "find" the lowest point as you would with a 360 degree flipper. 
+
+
+
+Cons: 
+
+A 4-bar lifter is more complex than a simple lifter mechanism. 
+
+It is difficult to implement invertibility. 
+
+It does not have 360 degrees of motion. 
+
+
+
+How to design a 4-bar lifter
+
+Use this calculator.

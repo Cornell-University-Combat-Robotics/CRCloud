@@ -1,0 +1,33 @@
+How to bend titanium wedges
+
+Notes about titanium bending
+
+In order to achieve a certain bend angle, you have to overshoot your goal angle by about 15°. From there, the titanium will bend backward to the spot that you want it to be in. 
+
+Titanium will break if you try to bend it to about 45°. Be sure to follow the procedure below carefully. 
+
+The procedure outlined in Step 4 below will increase the bend radius, therefore making the plate less susceptible to breaking. (Bigger radius = less stress concentration—remember statics?)
+
+Procedure
+
+All sheet metal bending is done using the sheet metal bender in the Emerson machine shop, which is to your left when you enter the shop.
+
+Clamp your titanium plate onto the machine. 
+
+For bends smaller than 45°:
+
+Bend to whatever angle you want + about 15 extra degrees. 
+
+Done!
+
+For bends at or greater than 45°:
+
+Bend titanium to no more than 55°.
+
+Unclamp and pull the titanium out a few millimeters. 
+
+Re-clampe the plate and bend again.
+
+Repeat until the desired angle is achieved. 
+
+Done!

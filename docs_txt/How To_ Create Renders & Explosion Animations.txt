@@ -1,0 +1,171 @@
+How To: Create Renders & Explosion Animations
+
+Step 0: Define Appearances
+
+Right click a component and click Appearance (or, use the A shortcut) 
+
+This allows you to edit the texture and look of the selected component.
+
+
+
+Step 1: Create a Render
+
+          Before:                                                After:
+
+	
+
+ 
+
+
+
+First, go to Render Tab (under left top corner where it says design)
+
+
+
+Generative Design = It does CAD for you
+
+Render = Pretty Pics
+
+Animation = Moving Videos
+
+Simulation = Force/Stress/Heat Analysis
+
+Manufacture = CNC Toolpaths
+
+Drawing = Part Drawings for Manufacturing
+
+Top Bar Learning:
+
+ 
+
+Appearances can also be changed here!
+
+Scene Settings in all the Detail you’ll add to the “camera” and “scene”
+
+In-Canvas Render is testing how it looks before doing the whole 
+
+Render Teapot is the FINAL picture (takes time and computationally a bit expensive, so make sure to render when you don’t need your laptop for a bit!)
+
+
+
+
+
+When content! Render the picture with a teapot! 
+
+If the pic is too small, zoom in next time or fix the aspect ratio
+
+Make sure to use Cloud render unless you have a beefy graphics card (then you can use local render)
+
+There will be a library of pics on the bottom once you render!
+
+Step 2: Editing the Scene with Scene Settings 
+
+
+
+Three settings: Environment, Ground, Camera
+
+
+
+Environment:
+
+
+
+Brightness = Light on Object
+
+Position = Position of environment and determines reflections and shadows (height + rotation of light)
+
+Background = Color behind object
+
+NOTE: Still use your mouse settings to move the object around!
+
+
+
+Ground:
+
+
+
+Ground Plane = creates the floor/ground, inserts shadows
+
+Flatten Ground = puts object on the ground rather than in the air
+
+Reflections = adds a reflection of the object like water to the ground
+
+
+
+Camera
+
+
+
+Perspective view makes the setting look real
+
+Orthographic view is where all the lines in the shot are the same distance from the camera
+
+Focal Length = Determines the feel of the object (small focal length makes the object feel bigger)
+
+^ Can make it like a go pro!
+
+Reminder: zoom in and pan to place the camera anywhere!
+
+Exposure = how long the camera lens is open to collect light (brightness) (phones automatically adjust this)
+
+Depth of Field = this is NOT visible until you start the In-Canvas render (this is the blur from things being too far or too close to the camera, note that the default is a loot of blur)
+
+Aspect Ratio = the shape of the screen width over the height (16:9 is the most common and is what computers are)
+
+Additional Settings
+
+Environment Library = 3d world
+
+polyhaven.com has good HDRI environments (files that define environments for Fusion 360 renders). Download .exr or .hdr files, then import into fusion by clicking the button in this photo.
+
+You can make the transparent background only if the background is solid color and in the render dialogue you have to make sure transparent background is checked with png format 
+
+
+
+
+
+In-Canvas Render:
+
+When red it is rendering 
+
+Settings (how nice it is level)
+
+There is a screenshot button
+
+
+
+How to make an Explosion Animation
+
+First: Go to the Animation tab in a full robot assembly
+
+
+
+
+
+
+
+This is your Storyboard– as you begin animating components in the assembly, the movements will appear as actions in the storyboard, which can be moved around to any time.
+
+
+
+
+
+This button is the Transform Component button– click it and select a component to edit its X,Y, and Z distance, and angle. 
+
+
+
+Drag your selected component to its final position. This animation should appear in your storyboard. 
+
+
+
+
+
+Keep on adding multiple different component animations until it’s sufficiently ‘exploded’.
+
+Click Publish to export your animation!
+
+
+
+Example:
+
+Beater B. Barker FORK v20.avi

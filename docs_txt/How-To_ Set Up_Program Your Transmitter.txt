@@ -1,0 +1,161 @@
+How to program your transmitter
+
+A transmitter is the remote controller that you hold to control the robot. It’s commonly confused with the receiver, a small box that sits inside the robot taking instructions from the transmitter and sending them to the ESCs. Since it’s an important part of transmitter setup, this guide covers how to set up a receiver too. 
+
+What kind of transmitter are you using?
+
+This is an important question, because the process is completely different for different transmitters. On CRC as of Spring 2024, we have two kinds of transmitters:
+
+FRSky Taranis X-Lite S
+
+Red, looks kind of like a gaming controller
+
+More expensive
+
+Has more programmable switches, buttons, and knobs
+
+Fancy: supports many model configs, telemetry, and complicated sensitivity curves
+
+Runs on rechargeable batteries, and can be charged via Micro-USB
+
+Used for Rosie and Beater B. Barker so far
+
+FlySky FS-i6
+
+Black, looks like an RC plane controller
+
+Cheaper
+
+Simpler, but perhaps has a more confusing interface and settings navigation system
+
+Runs on AA batteries (not rechargeable)
+
+Used for all other bots so far
+
+What receiver are you using?
+
+This is an equally important question, because the receiver has to use the same protocol as the transmitter. This means a receiver that works with the FlySky FS-i6 won’t work with the FRSky Taranis X-Lite. Double check what protocols are supported by the transmitter you’re using, and select a receiver that uses one of those protocols.
+
+How to get a receiver to work
+
+Make sure it has power. This is easiest to provide using the BEC output from an ESC.
+
+The BEC output is almost always the middle wire of the 3-pin connector on little wires that comes out of the ESC. If there’s no middle wire, that ESC doesn’t have a BEC.
+
+Make sure you’re connecting the 3-wire connectors in the right orientation. The markings are hard to see, and often the signal and negative markings look quite similar. If an ESC isn’t initializing the way you’re expecting, try flipping the 3-wire connector.
+
+Setup: FrSky Taranis X-Lite
+
+Get the transmitter (it looks like this)
+
+[case, closed]   [transmitter in case, open]
+
+
+
+Make sure it’s charged: plug the transmitter into a USB phone charger with a micro-USB cable.
+
+You can’t use the transmitter while doing this. If you need to use the transmitter while also charging the batteries, you can swap to a charged pair of batteries and charge the old ones on the dedicated charger we have. See Appendix A1: Charging the batteries externally  how to swap the batteries and charge them externally: 
+
+Make sure the antenna is on: screw the antenna onto the top
+
+ 
+
+Press and hold the power button (button 8) to turn it on
+
+How navigation works
+
+Joystick 1 is the navigation control joystick– to move between menus, long-hold this joystick to either side to switch between menus.
+
+Button 2 is the back button- press this button to exit out of any option that is selected
+
+Button 3 is a select button. Clicking this button allows you to select and change setting. 
+
+Joysticks 4 and 5 are the throttle joysticks. These are used to control the robot, but do not have any use in adjusting the settings. Joystick 4 is for controlling the starboard side of the robot, and Joystick 5 is for controlling the port side of the robot. 
+
+Button 6, The + pad, is mostly just for adjusting trims and not used for adjusting the ++settings.
+
+Switches 7 and 8 are switches that can be configured depending on what you need to toggle. For Beater B Barker, these switches shut off/turn on the weapon and flywheel.  
+
+
+
+
+
+
+Program: FrSky Taranis X-Lite
+
+
+
+Go to the MIXES screen
+
+
+
+
+
+Select the channel with the ESC you want to program
+
+As an example, I will use CH3
+
+
+
+Select Edit
+
+
+
+
+
+Select Source
+
+While selected, move the control you want the ESC to be bound to
+
+
+
+
+
+To reverse the direction of a motor, set Weight to -100
+
+
+
+
+
+To set a switch (typically used for weapon ESCs), scroll down and repeat step 4 with Switch
+
+
+
+
+
+To bind multiple controls to one channel, select the channel
+
+Select Insert After
+
+Repeat step 4
+
+
+
+
+
+Example video:
+
+drive.google.com/file/d/1-B6lAepcTC9rxdcHlyd-PQhjrbcpKTpo/view?usp=drive_link 
+
+
+
+
+
+
+Appendix A - Taranis X-Lite
+
+Appendix A1: Charging the batteries externally
+
+The battery covers are circled below– they unscrew in the direction indicated, and each ‘leg’ holds one 18500 battery. These are RECHARGEABLE lithium ion batteries - don’t throw them away, even though they’re shaped like disposable ones!
+
+ [Battery coming out of socket]
+
+
+
+Get the 18500 battery charger (a very specific thing — this is the one we have)
+
+
+
+Put the battery in it
+
+Plug in the USB cable to a phone charger?

@@ -1,0 +1,31 @@
+JANFAB DAY 5
+
+AaronAnanyaEthan DGraceJennyRiddhiRohinSophieTylerShaoAnikaRyanVinsonLLPLLPLLALPLPTasks: 
+Agenda
+ Take attendance! (P if present, L if late, A if absent, E if excused)
+
+
+ProjectMembersBrief, informative summary of work done, emphasis on high-level problems and plans for next meetingRecoveryRiddhi LambaSophie Cheng
+Jenny Wu- Kind of tested backup stuff
+- Now backup alternates between forward and back
+- Corner detection returns Huey even if orientation is not found
+- Next time:
+- Scale with frame rate
+- Live test
+- Use the huey image even without orientation
+- Go through algo (ex. Huey danger zone)
+- Orientation can now be None, while other Huey attributes exist
+- Test check_desired_speed_and_turn: Does orientation default to 0.0, or save last orient? (line 239)
+- Nixed extraneous corner codeMechEGrace Lim
+ft Shao Stassen- printed the wheels overnight
+- the axle fits!
+- creating the GraShao Groove
+- it is ready to print but still waiting for the 3D printer to be freeSensorsAnanya JajodiaRohin PhukanShao StassenEthan DeCampAnika Kumar
+Riddhi Lamba? Made the bots dictionary give the position of Huey and Enemy even when corners are not detected
+? Integrated sensors with main.py
+? tested newly soldered imu and esp
+? one works, one doesn't
+? tried to test but ran into many issues :(3D-Printing HellVinson ChenRyan Siglag- Cleared support on wheel hubsTestingPersonIn Progress
+
+Autonomous Meeting Notes9/4/2025
+

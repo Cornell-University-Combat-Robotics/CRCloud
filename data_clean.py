@@ -2,7 +2,7 @@
 import os
 import json
 
-FOLDER_PATH = "txtdata"
+FOLDER_PATH = "docs_txt"
 
 hashmap = {}
 

@@ -1,0 +1,57 @@
+How to choose a battery
+
+Reference the Technical Glossary for more info on S-ratings, C-ratings, etc. 
+
+
+
+Why LiPo batteries?
+
+High energy density (more energy per cell compared to, say, NiCd batteries). 
+
+Weight efficient. 
+
+
+
+How to pick a battery for your robot
+
+Governing equation
+
+Current [A] * Time [h] = Capacity [Ah]
+
+Current: Total current that the battery needs to supply. 
+
+Time: The amount of time that the battery will need to supply the current. (For NHRL matches, this is a maximum of 3 minutes.) 
+
+*Don’t forget to convert to mAh*
+
+
+
+Methods for picking your battery
+
+*Choosing a battery is the last electronic piece that should be chosen (except for the wires, which are really the last thing)*
+
+
+
+Method 1: Use the equation above. Sum the maximum continuous current for each motor to determine the “motor current.”
+
+Good because: You can determine which battery you want before you test it, and you’ll have a large factor of safety. 
+
+Bad because: This will result in a far higher capacity than you realistically need, since the maximum current is rarely met, typically only for brief moments while spinning up, or when it is stalling due to high torque loads on the weapon (for instance, if you try to spin up against a wall). 
+
+Method 2: Manually test and measure current draw. 
+
+Good because: It will give you a more accurate estimate that takes into account friction and air resistance. 
+
+Bad because: You need to have the entire robot assembled to test this, and you need a method to measure the current in your bot. 
+
+Method 3: Find a robot similar to yours and use their battery. This reference sheet may be helpful. 
+
+Good because: Other builders have already tried and tested it, so you don’t have to. And there is some amount of proof that it will work. 
+
+Bad because: It’s a little iffy. You have to be okay with some hand-wavy reasoning. 
+
+Method 4: For the weapon motor current, use this spreadsheet. 
+
+Good because: It will give you a better estimate of current draw for your weapon motor. 
+
+Bad because: You need to find the drag coefficient somehow…

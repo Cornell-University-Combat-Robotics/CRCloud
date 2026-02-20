@@ -1,0 +1,87 @@
+How to solder
+
+General guidelines
+
+DO NOT FORGET HEAT SHRINK!!
+
+The soldering iron should be between 550 and 600 degrees Fahrenheit (check your units!). Depending on how old/worn out the soldering tip is, you might need to go a bit higher, but you shouldn’t reach 700 degrees.
+
+Use the solder sucker! It’ll keep the fumes out of your face so you don’t breathe them in. 
+
+The key to soldering is holding your iron in one place and waiting. As solder melts, the surface tension will pull the solder towards itself and create a puddle that will be smooth when it melts. That’s how you get the nice shiny finish!
+
+
+
+Wire to wire
+
+Combine the wires: You know how in Avatar (the movie with the blue people) they do the hair thing that connects with other hair? That’s what you’re going to do—just like in the first picture, but make sure to press the wires down closer together. (If you have no idea what I’m talking about you may refer to this video for reference.) Alternatively, you can twist your wires together like they’re giving each other a hug, as seen in the second picture. 
+
+		
+
+Solder: Glob some solder on there. The more you can get in between the wire threads, the better. Try to make it as smooth as possible, if you can. 
+
+Finish: If you don’t have any wires hanging out by themselves and if the wires don’t come apart when you pull them, then you’re probably good. 
+
+
+
+Wire to XT60/MT60/MR30/MR60
+
+Put heat shrink on your wire! 
+
+Tin the wire: A good tinned wire should look like the one below (though I would strip the wire maybe half that amount). The biggest plus about tinning is it’ll keep the wire threads from fraying as you put the wire into the connector. A second plus about tinning is that when you heat the solder, you know the solder will already be at the end of the wire that you can’t reach once you’ve put the wire into the connector. Try to put enough solder on so it covers the outside and goes in between the threads a bit, but do not put too much solder on or else you won’t be able to fit it into the connector. 
+
+		
+
+
+
+Put the wire into the connector: Pretty self-explanatory. If it doesn’t fit, you’ve probably used too much solder. Use the desoldering tool to take some off. 
+
+Solder: Feed the solder into the connector until the solder has basically filled the entire connector slot like a puddle. Ideally, this is what a perfect solder should look like:
+
+
+
+The two wires should not touch each other at all.
+
+Don’t forget heat shrink!
+
+
+
+Wire to bullet connector
+
+Tin the wire: See the second step of part C.
+
+Put the wire into the connector. 
+
+Solder: There’s a hole in the bullet connector through which you should feed the solder. Hold the iron up to the bullet connector to warm the metal, which should melt the solder that is tinned on your wire. The solder you add should melt upon touching the warm solder on your wire. 
+
+		
+
+Wire to power switch
+
+sdfasd
+
+
+
+Wire to ring connector
+
+Put heat shrink on your wire! 
+
+Strip the wire, and without tinning it, put the wire into the tube at the bottom of the ring connector, as seen in the pictures below. 
+
+Important notes: Make sure you have the correct size ring connector for your wire gauge. Also, make sure your ring connector is not insulated (i.e. it should look like the picture below). 
+
+You should see the wire poking out of the top, but it should not extend beyond the length of the tube. 
+
+		
+
+Crimp the ring connector to squish the tube around your wire. Some wire strippers have a crimper attached to it (see the picture below). 
+
+		
+
+Heat the outside of the tube and feed solder into the wire until it looks nice and smooth. 
+
+Do the heat shrink stuff. 
+
+
+
+Wire to circuit board

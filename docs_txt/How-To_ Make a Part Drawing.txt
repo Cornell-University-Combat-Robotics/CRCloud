@@ -1,0 +1,322 @@
+How to make a part drawing from a CAD model
+
+How to make a part drawing:
+
+Open Fusion. 
+
+In the top left of the screen, there is a box that says “Design.” Click the dropdown menu and select “Drawing,” then “From Design.”
+
+
+
+
+
+If your part is a component of a greater assembly: In the box that appears, under “Contents,” change “Full Assembly” to “Select.” From there, you can select the part that you want to make a drawing of. (It’s easiest to do this from the dropdown menu to the left as opposed to clicking directly on the CAD. That way you know you’re selecting the correct part). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Under “Template,” select “CRC Part Drawing Template” to make sure your part drawing is the correct formatting. 
+
+If “Part Drawing Template” does not appear, go to: Browse → Templates and Backups → Templates → CRC Part Drawing Template
+
+Click OK. 
+
+Double check a few settings:
+
+On the left, hover over “Document Settings” and click the little gear on the right. 
+
+Make sure your units are in inches. 
+
+Change “Linear Precision” to 0.1234 and “Angular Precision” to 0.123. 
+
+From there, start making your drawing! 
+
+
+
+
+For MechE purposes:
+
+This section will outline some tips for how to make efficient and effective part drawing, so that your machinist can go to the machine shop and NOT have to do any math!
+
+
+
+Projected views
+
+Always use projected views! (Unless you’re putting an isometric view in the corner for reference.) That way the machinist does not have to guess which side of the part the drawing is referring to. Projected views can be found under Create → Projected View (or the shortcut P). 
+
+Symmetry
+
+If your part has symmetry, use centerlines so you don’t have to do more work than you have to. Centerlines can be found under Geometry → Centerline. Use this to identify the axis across which the part is symmetric. Also make a text note in the empty box that says “Symmetric about centerline(s)” so it’s extra clear to the machinist. 
+
+Ordinate Dimensioning
+
+Under the “Dimensions” tab on the top bar there is an option labeled “Ordinate Dimension.” This is especially useful for parts with lots of dimensions since it vastly clears up the space by creating the dimensions from a common zero point. Use this feature as often as you can to make the drawing as clean as possible. There are pictures below for comparison. 
+
+Ordinate dimensions are also much easier for the machinist to use, since it mimics the way the machine actually works. 
+
+
+
+
+
+			Bad						Good
+
+
+
+
+
+Hole Tool
+
+All of the holes in the CAD should be made using the Hole Tool, which means that in the drawing, Fusion can automatically dimension the hole with the correct features. Under the “Text” tab on the top bar there is a “Hole and Thread Note” option. Click on this, then click on the hole you want to dimension. This note should include the number of holes that the note pertains to, so you don’t have to repeat this for every single hole. 
+
+See the “Side tangent about holes and threads” section for more information about what all of the stuff on your hole note means. 
+
+Other things to include
+
+In the box in the bottom right corner, be sure to include other features like tolerances and units. The drawing below has typical values for these features, and is also a good example of ordinate dimensioning (good job Ricky👍). 
+
+Don’t forget the thickness!! That is usually the most missed dimension since you need a separate projected view from it. (The drawing below doesn’t have it because the thickness is included under “Materials,” but it’s good practice to include it in the drawing anyway so the machinist doesn’t have to look for it.)
+
+Example drawing:
+
+
+
+
+
+
+
+
+Side tangent about holes and threads
+
+Below is a table of common symbols you’ll see related to your Hole and Thread Note. 
+
+
+
+Symbol
+
+What it means
+
+What you should do about it (if anything)
+
+[A number]X
+
+i.e. 4X
+
+There are 4 holes on this part that have the same features as this hole.
+
+Nothing
+
+
+
+Diameter: A number following this symbol will indicate the diameter of the hole before the tapping operation.
+
+If this hole is going to be tapped, make sure that the number indicated after the diameter is an actual drill size. Drill sizes are either fraction or numbered; look up which drill bit most closely matches your hole size, and then put that size in parenthesis next to the number so your machinist doesn’t have to look anything up while they’re machining!
+
+
+
+For example: 
+
+
+
+
+
+Counterbore: A number following this symbol will indicate the depth of the counterbore.
+
+Nothing
+
+
+
+Countersink: This will be accompanied by a diameter and an angle that the countersink should be. 
+
+Nothing
+
+
+
+Depth: The number following this symbol indicates how deep the hole should be. 
+
+If you know that the hole is a through hole and does not require a certain depth, then remove this symbol and its number and replace it with the word THRU. It’s more simple and compact, and makes more sense to the machinist. 
+
+[A number] - [Another number]
+
+i.e. 10-24, ¼-20, etc.
+
+This indicates the type of thread: The first number tells you what the diameter is, and the second number tells you the number of threads per inch. 
+
+
+
+Note that for diameters below ¼”, the standard turns to number instead of fractions. 
+
+i.e. A #10 screw is smaller than a ¼” screw, and a #8 screw is smaller than #10. 
+
+Nothing
+
+UNC
+
+Unified Coarse Threads: Indicates that the thread type is coarse. (This is what we usually use.)
+
+Nothing
+
+UNF
+
+Unified Fine Threads: Indicates that the thread type is fine.
+
+Nothing
+
+2A or 2B or anything of the sort
+
+Represents the class of thread. 
+
+
+
+1A, 2A, and 3A apply to external threads. 
+
+
+
+1B, 2B, and 3B apply to internal threads. 
+
+The 1, 2, or 3 class isn’t super necessary for our purposes, so feel free to delete (but it doesn’t matter too much).
+
+LH
+
+Indicates the direction of the thread (right-handed or left-handed). 
+
+You should never see LH! Delete an LH if you see it!
+
+
+
+This happens if people mirror their hole features in the CAD.
+
+
+
+For Marketing purposes:
+
+This section will outline how to get good line drawings of robots in any view (side view, isometric, etc.) using Fusion. You can use this for merch, advertising, or whatever you’d like!
+
+
+
+For example: 
+
+
+
+
+
+Open Fusion
+
+Open the main file for the bot (the drawing will look exactly like the model you choose)
+
+
+
+Click design
+
+
+
+
+
+
+
+
+Click drawing, then from design
+
+
+
+
+
+
+
+ Just click OK
+
+
+
+
+
+NOW DO NOT CLICK ANYWHERE! There should be a little pixelated robot following your cursor as you move it on the drawing space, it looks hella jank but just trust the process
+
+Clicking isn’t the end of the world, if you do click scroll down to step 9
+
+
+
+
+
+Now you can change settings as you need. Decrease the scale ratio to make the drawing bigger (try 1:2), or change the perspective of the drawing in orientation
+
+
+
+
+
+
+
+Once you’re done, click to place the robot down then click OK
+
+The drawing is now done! But there are some other things on it
+
+If you accidentally clicked in step 6: right click on the outline and click move to move the drawing
+
+to resize, right click and click edit view
+
+
+
+9a. Once you hit move just click anywhere on the robot then move your mouse and it will move. When you’re done, hit ok
+
+
+
+To remove the words, just select it, right click, and hit delete (you can also hit the delete button on the keyboard). Do the same with the outer box.
+
+
+
+
+
+It should look like this:
+
+
+
+
+
+Now you have to export it! Click the drop down from export and click export PDF, then save it to your computer (not to fusion)
+
+
+
+
+
+Now you need a png to remove the background to the outline, so I just take a screenshot of the pdf zoomed in (use F11 for better quality image? Doesn’t rly matter)
+
+
+
+
+
+Use https://remove-white-background.imageonline.co/ or a related background removing website to remove all the white so it’s just the outline
+
+I like that website because you can scale how much white you remove from the photo
+
+
+
+
+
+You’re done! 
+
+If you want, you can edit the photo in Procreate, Photoshop, etc., just alpha lock the transparent image and draw over it with black because there is a tiny outline in white… 
+
+Same goes for if you need a white outline

@@ -1,0 +1,117 @@
+How to take care of your LiPo battery
+
+Safety guidelines
+
+Do not charge a LiPo cell above 4.2 V. This can cause the battery to set on fire. 
+
+LiPo cells are permanently and irreparably damaged if discharged below about 2.8 V per cell.
+
+Because LiPo batteries can be unstable, it is important to always store them in LiPo bags and watch the battery when charging them. Give it a poke every once and a while to make sure it’s not heating up too much. 
+
+Always discard a LiPo battery that exhibits early signs of damage, such as “puffy” swelling of the wrapping. 
+
+Never use any charger except for a charger specifically designed for LiPo batteries. 
+
+It is best to charge your battery out of the robot and in a charging bag. 
+
+Charging your battery inside the robot is fine for a few charge cycles (for example, in between matches at competition) but over time it may allow the charge state of individual battery cells to drift from optimum. 
+
+If your battery catches on fire, back away and leave it in the LiPo bag if it is already in a bag. Grab the fire extinguisher by CMR’s table or the sand and use it to extinguish the fire. Sand will also work if a fire extinguisher is not available. Do not use water on a LiPo fire!!!
+
+How to charge your LiPo battery
+
+Always make sure that the black wire goes to the black wire, and the red wire goes to the red wire. 
+
+Plug the main connector of your battery into the battery charger (this connector is most likely a yellow XT60). 
+
+Plug in the balance port to the charger. This is the smaller white connector.
+
+There are different connectors depending on how many cells your battery has. Make sure you plug in the correct one (for example, a 6S battery should plug into the 6S port). 
+
+The balance port makes sure that all of the cells in your battery charge equally, which will prolong the life of your battery. 
+
+The amperage setting on your charger should be the following: 
+
+If your battery is 4200 mAh, you should charge at 4.2 A. If your battery is 2400 mAh, you should charge at 2.4 A, etc. 
+
+The voltage setting on your charger should be the following:
+
+Your battery might have the voltage written directly on it. If there is no voltage, you can calculate the voltage using the following: Voltage = 3.8 * number of cells
+
+For example, for a 2S battery, your voltage setting should be 7.6V (or 3.8*2)
+
+Hold down the charge button.
+
+Confirm your settings. 
+
+Your battery should now be charging!
+
+
+
+What Constitutes a Damaged Battery?
+
+Any battery that has excessive swelling, or loses it’s distinct rectangular shape.
+
+At competition, if something indents a battery or damages it in any way beyond the most superficial impacts, you should refrain from using or charging the battery at all costs! If charged or used further, this can cause a fire. AT NRHL, A FIRE IN THE PITS WILL DISQUALIFY THE BOT IMMEDIATELY! DON'T TAKE THE RISK! A fire in the cage will lead to the entire robot getting thrown in the trash, and they will not give you access to it for a long time to make sure it will not explode or set on fire again. DON’T TAKE THE RISK!!!
+
+How to Dispose of a Damaged LiPO/LiHV Battery
+
+In a plastic container, dissolve ½ cup of salt in 1 gallon of cold water. 
+
+Drop the battery into the salt water and leave it there for at least 2 weeks. 
+
+Remove the battery, wrap it in paper, and throw it in the trash.
+
+Restoring Over-Discharged LiPos:
+
+Step 1: Initial Restoration Phase (LiPo < 3.3V/cell)
+
+	Warning: While LiPos are <3.3V/cell, do NOT leave unattended. Constantly monitor through touching batteries to ensure they do not get hot and making sure the battery is not puffing. Always charge batteries in a LiPo bag. NiMh chargers do not detect end-of-charge, so if left unattended LiPo battery will catch fire. 
+
+
+
+Use NiMh BATT charger setting (without the balance board connected) with 0.1A until the battery reaches 3.3V * #cells in charge. 
+
+For 6S battery- 19.8V
+
+For 4S battery- 13.2V
+
+
+
+Fig 1: Step 1, Initial Restoration Phase.
+
+
+
+Fig 2: Photo of charger settings, Step 1.
+
+
+
+Step 2: Post-Restoration Phase (LiPo > 3.3V/cell)
+
+Warning: Charge within LiPo battery bag. Always watch the battery while charging. Do not charge to 100% charge, in order to avoid battery damage. 
+
+Charge anywhere between 0.5C and 1C on LIPO BATT mode. The lower the capacitance, the slower the batter will charge, but the safer it will be. Do not exceed 1C.
+
+Example: 1300 mAh 4S (14.8V) battery
+
+1C- Charge at 1.3A
+
+0.5C- Charge at 0.65A
+
+Continue watching the batter as it charges, unplugging as it approaches max 
+
+
+
+
+
+LiHV Batteries:
+
+LiHV batteries are essentially LiPO batteries, but with a slightly higher voltage, hence the HV meaning High Voltage. For most cases, they can be treated the same as LiPO batteries, however, their maximum voltage is 4.35 Volts per cell, as opposed to 4.2.
+
+You can adjust this by pressing the cycle button when LiPO is flashing on the charger screen, and selecting LiHV instead.
+
+LiHV batteries can still be charged at 4.2 Volts per cell, they will just hold less power than they could.
+
+NOTE: SMC Racing will make custom batteries if you email orders@smc-racing.com
+
+This includes LiHV and LiPO batteries, how custom is custom is yet to be determined (we should email and talk)

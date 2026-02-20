@@ -1,0 +1,21 @@
+How to design for different manufacturing methods
+
+
+
+Designing for 3D printing
+
+stuff shrinks
+
+supports
+
+
+
+Designing for 2D manufacturing (i.e. laser cutting, water jetting)
+
+Both laser cutting and water jetting can only cut 2D geometry. 
+
+
+
+Designing for CNC machining
+
+no sharp inner corners

@@ -1,0 +1,379 @@
+Slides references: 
+
+
+
+W1M2 Marketing and Auton: GitHub
+
+W2M2 Auton: Python
+
+
+
+
+
+GITHUB
+
+
+
+
+
+How to Clone a Repository - SSH
+
+
+
+Navigate to the GitHub page of the repository you want to clone and locate the green “<> Code” button
+
+Click on the SSH tab
+
+Copy the SSH url
+
+Go to your laptop’s terminal
+
+“git clone [ssh_url]”
+
+
+
+
+
+How to Pull Code From Main Branch
+
+
+
+To pull code from the main branch when you already have changes locally:
+
+Stash Your Changes: If you have local changes that you want to save for later, use git stash to temporarily store them.
+
+Pull the Latest Code from the Main Branch:
+
+“git pull origin main”
+
+Apply Your Stashed Changes: Once the latest code is pulled, you can reapply your changes by using 
+
+“git stash pop”
+
+Alternatively, if you want to merge your changes with the latest code without stashing, you can use: 
+
+“git pull --rebase origin main”
+
+This will apply your changes on top of the updated main branch, reducing the likelihood of merge conflicts.
+
+
+
+
+
+How to Commit Code to Local Repository
+
+
+
+After making changes, stage your changes for commit using 
+
+“git add <filename> or git add .” (to add all changes) 
+
+Then, commit with a descriptive message:
+
+ “git commit -m "your descriptive message"
+
+Remember to always write **clear and concise** commit messages that describe the change in the code.
+
+
+
+Note: “git commit -a -m "your descriptive message" combines “git add .” and “git commit -m "your descriptive message"
+
+
+
+
+
+How to Resolve Merge Conflicts 
+
+
+
+Git cannot resolve differences between two separate commits.
+
+
+
+Types of Merge Conflicts:
+
+Edit Conflict
+
+Delete-Edit Conflict 
+
+Content Conflict
+
+
+
+You can resolve merge conflicts by:
+
+Editing the file
+
+Stashing changes
+
+git stash
+
+git pull
+
+git stash pop
+
+Merge editor
+
+Add files and commit the change
+
+
+
+For more reference: resolve merge conflicts
+
+
+
+
+
+How to Use Branches
+
+
+
+*Branches allow you to work on new features or bug fixes separately from the main codebase. 
+
+
+
+Always create a new branch for each feature or fix
+
+“git branch <new-branch-name>”
+
+“git checkout -b <new-branch-name>”
+
+“git switch -c <new-branch-name>”
+
+
+
+Once the work is complete, merge it back to the main branch.
+
+“git checkout main”
+
+“git merge <completed-branch-name>”
+
+
+
+Note: To keep the branches organized, you should always delete a branch once you finished implementing a feature and undergo code review, or successfully implement and fully test a fix to a bug
+
+
+
+How to Delete a Branch
+
+
+
+Locally: 
+
+git branch -d <branch-name> safe delete 
+
+git branch -D <branch-name> force delete
+
+
+
+Remotely:
+
+git push origin --delete <branch-name>
+
+
+
+How to Switch to Existing Branches
+
+
+
+“git switch <existing-branch>”
+
+“git checkout <existing branch>”
+
+
+
+
+
+
+
+
+
+
+
+GOOD CODING PRACTICES
+
+
+
+
+
+Naming Conventions
+
+
+
+Here are the criteria that make a good commit message:
+
+The first line is less than 50 characters, with the first one capitalized. The words complete the sentence "If you pulled this commit into your own copy of the repo, this commit would..." You are informing the reader what value they are getting from your commit.
+
+The second line is blank.
+
+The remaining lines supply details.
+
+
+
+Variables: snake_case
+
+Functions: snake_case()
+
+Classes: PascalCase
+
+Constants: ALL_CAPS
+
+
+
+
+
+Always Work in GitHub Branches How-to: Code & GitHub
+
+
+
+*Avoid working directly in the main branch. Create a new branch for each task, allowing others to review changes before merging into the main codebase.
+
+
+
+
+
+Update README.md Often 
+
+
+
+*The README.md should provide an overview of the project, setup instructions, and any relevant information on usage. Keep it updated, especially when new features are added.
+
+
+
+
+
+GitHub Pull Before Pushing How-to: Code & GitHub
+
+
+
+*Always run git pull before pushing changes to ensure your local code is up-to-date with the remote repository. This helps prevent conflicts and potential merge conflicts.
+
+
+
+
+
+Classes
+
+
+
+Use classes to encapsulate related functions and data, especially for larger projects. Each class should have a single responsibility.
+
+
+
+
+
+Global Constants/Variables
+
+
+
+Global Constants and variables are values defined at the top of a file. We should use them because it makes it easier to modify values and results in cleaner code. We should use them anytime we have to hardcode a value
+
+
+
+
+
+Environments
+
+
+
+An environment is a directory containing a collection of software tools and installed packages. The benefit of using environments is it would prevent package collision errors. Install Conda → environment management system
+
+
+
+venv commands:
+
+python -m venv <directory>
+
+source <directory>/bin/activate | venv\Scripts\Activate.ps1
+
+deactivate
+
+rm -r <directory>
+
+
+
+Conda Commands: 
+
+conda create --name <environment name>
+
+conda activate <environment name>
+
+conda deactivate
+
+conda env list
+
+Lists all of your environments
+
+conda list
+
+See which packages are installed in your current environment
+
+Use pip to install python packages once you’re on your environment
+
+
+
+
+
+Setup.sh
+
+
+
+A setup script (setup.sh) can automate the setup process, installing necessary packages and configuring the environment. Use this to streamline the project setup for new contributors.
+
+
+
+
+
+.gitignore
+
+
+
+The “.gitignore” file specifies files and directories that should not be tracked by Git (e.g., sensitive data, large binary files, and local configuration files). Be sure to keep it updated.
+
+
+
+
+
+Requirements.txt
+
+
+
+A requirements.txt file lists all necessary packages for a Python project.
+
+
+
+
+
+
+
+
+
+
+
+GIT COMMAND CHEAT SHEET
+
+
+
+git status →  lists your branch, commit status, and more
+
+git pull →  pulls from main
+
+git add <filename> / git add -A / git add . → adds changes to staging area
+
+git commit -m “commit message” → commits things in staging area locally
+
+git push → pushed local commit to global repository
+
+git checkout <branch name> [git checkout main, git checkout test_code] → switches branch
+
+git branch <new branch name> → creates new branch
+
+git help →  Gives a list of useful git commands
+
+git restore <file> → Reverts changes and “restores” previous version of the file(s)
+
+git rm <file> → Removes file from the working directory. Calling git add, git commit, git push will push the current working directory and remove file from the repo.
+
+git stash → Stashes changes away (can be recovered), and provides a clean working directory.
+
+git stash pop → Pops most recent stash back into the working directory

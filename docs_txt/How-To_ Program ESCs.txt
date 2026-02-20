@@ -1,0 +1,195 @@
+How to program AM32 ESCs 
+
+This guide was written as a response to repeat robotics sending ESCs that were incorrectly configured. I (Jason) am unsure whether this guide is specific to the model of ESC we worked on. I think it should apply to all AM32 ESCs regardless. 
+
+Reflashing the Firmware
+
+Required Materials: 
+
+1 ESC with soldered power wires
+
+1 usb linker (USE THIS SPECIFIC ONE FOUND IN TEAM SUPPLIES, we’ve had trouble with other USB linkers not working) 
+
+
+
+1 lipo battery
+
+1 usb c cable
+
+1 windows computer
+
+
+
+Unfortunately, this method only works with windows laptops due to the software required. 
+
+
+
+Method: 
+
+Download all the files from this drive folder. 
+
+Unzip the file named “config tool.” 
+
+Navigate to the .exe file named “SerialPortConnector.”
+
+Run the program.  
+
+If you get a pop up like the following stating that the program might be dangerous, press the “more info” button and select “Run anyway.” 
+
+
+
+The program should look like the following. 
+
+
+
+Select the “Serial Port” dropdown and take note which COM Ports are present. There may be none depending on the computer used. 
+
+Plug the USB linker into the PC using the usb c cable. 
+
+Plug signal wires from the ESC into the usb linker. Make sure the black wire from the ESC corresponds to the ground pin on the usb linker. 
+
+
+
+Provide power to the ESC by connecting it to the lipo battery. At this stage, the ESC should be connected to the PC via the USB linker and the battery. 
+
+In the settings tab on the ESC config tool, select the “Serial Port” dropdown and navigate to the COM port that is newly detected, compared to step 7. Check the “Direct Connect” box, and then press “Connect” to the right. 
+
+From the newly shown options, click “M1”
+
+
+
+ESC settings should populate (they won’t look the same as this)
+
+
+
+Select the “Load Config File” button on the right hand side. 
+
+
+
+Navigate to RepeatDrive_AM32.ecf and choose “Open.” 
+
+Press “Save Settings” towards the bottom of the window. The top status window should change to “WRITE EEPROM SUCCESSFUL”
+
+
+
+Press M1 again to verify that the ESC settings are saved. It should show the below screen once again. 
+
+
+
+Press “Close Connection” and unplug everything. 
+
+
+How to program ESCs using BlHeliSuite32
+
+The Arduino Method
+
+
+
+VIDEOS AND DOCUMENTS REFERENCED:
+
+Flashing an ESC using an Arduino
+
+Programming ESC using Software
+
+Determining your ESC settings 
+
+
+
+This method requires the following materials: 
+
+1 Arduino
+
+1 Arduino to USB cable 
+
+1 ESC compatible with BlHeliSuite32 
+
+2 Wires/Jumper cables 
+
+1 Laptop with a USB port
+
+1 Battery or power supply
+
+
+
+Step 1: Flashing the ESC
+
+Download the required software from the following link (options for Windows/Mac/Linux are available):
+
+https://github.com/bitdump/BLHeli/releases 
+
+Unzip the folder and run BLHeliSuite32
+
+Click on the Make Interfaces tab 
+
+Select the appropriate option from the Arduino Board dropdown
+
+For this we are using Uno w/ ATmega328
+
+Do not change the Baud option, the default option should suffice
+
+Click the Arduino BlHeli Bootloader option
+
+Using jumper cables, connect the black female wire of the ESC to the GND pin of the Arduino
+
+Depending on the Arduino board, connect the white female wire of the ESC to a numbered digital pin on the Arduino
+
+Arduino Uno: digital pin 11
+
+Arduino Nano: digital pin 2
+
+Arduino Mega: digital pin 51
+
+Connect Arduino to computer via USB connector
+
+For the Port option, click on the option that displays, should be something like “COM4USB2.0”, may not be exactly the same
+
+If nothing shows up, may need to download Arduino software on your computer in order to install the necessary port drivers:
+
+https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE (Windows/Mac/Linux download)
+
+Click the Arduino BlHeli Bootloader button, then press Yes for the following popup
+
+
+
+Step 2: Programming the ESC 
+
+Connect the Battery to the ESC
+
+Switch to the ESC Setup Tab
+
+On the Select BLHeli_32 Interface tap, click on BLHeli_32 Bootloader (USB/COM)
+
+Ensure the appropriate option for Port is selected
+
+Click on the Connect button
+
+This should connect the ESC to the interface. If it fails to connect and states that “ESC is not connected to power”, use a multimeter to make sure current is flowing through the ESC and that all circuit components are soldered correctly. 
+
+Customize the ESC settings to fit your robot’s needs. Further detail on what each ESC setting means can be found here. 
+
+Once you are satisfied with your settings, click the Write Setup button. This will save all the settings onto the ESC.  
+
+If you want to see the settings currently on the ESC, click the Read Setup button.
+
+In the top-left corner, click the ESC Setup button, and then click Save setup to ini file. This will save your ESC settings as a file on your computer that you can upload to other ESCs.
+
+To add ESC settings from an ini file to a new ESC, go to the top-left corner, click the ESC Setup button, and then click Read setup from ini file. 
+
+
+
+After writing the setup, you are now done with programming your ESC!
+
+
+
+
+
+
+
+
+How to program ESCs using VGood Programming Card 
+
+	This is the VGood Programming Card, which allows you to program ESCs with BECs (Battery Elimination Circuits). To program ESCs using this card, plug your powered ESC into the PROGRAM plug on the top. The buttons will flash, which means the VGood card is connected to the ESC. Then. select the setting you want on the lit up row, and continue down the card until every setting is programmed. 
+
+
+
+For more information on each setting and its meaning, please refer to this YouTube video.

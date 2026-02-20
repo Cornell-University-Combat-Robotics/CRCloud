@@ -1,0 +1,53 @@
+How to torch braze aluminum
+
+Helpful Video
+
+This video will explain everything you need to know, but if you’re too lazy to watch it, you can read the directions below. 
+
+Materials
+
+You can get all of these materials at Home Depot or Amazon:
+
+Propane Torch 
+
+Torch Trigger
+
+Aluminum brazing and welding rods
+
+Aluminum Tubing
+
+Steps
+
+*Note: When brazing, the filler rod will always flow towards the heat. Had you clamped your setup vertically and gotten the joint a fair bit hotter, you could have drawn the molten filler towards the torch. could make for a significantly stronger joint.
+
+
+
+*Note: For better results, work on a ceramic topped table with a ceramic tile behind the metal you're working on. Try to place ceramic on the sides also. This will reflect a good portion of heat which will otherwise dissipate very quickly.
+
+
+
+Chamfer the ends of the aluminum where you are going to bond it (to allow a channel for the braising material)
+
+Clean the aluminum with a brush
+
+Clamp up the tubing
+
+Start heating the intended area with the propane torch (get it to around 700 degrees)
+
+This may take 4-5 minutes
+
+We want it hot enough to melt the brazing rod but not the aluminum
+
+When you think you’ve reached that point start moving the rod down the chamfered channel and when it starts to melt you are hot enough 
+
+Rub the brazing rod until its filled in then finish off with some heat
+
+Repeat process on all sides of the aluminum joint
+
+Additional resources
+
+Working with braze aluminum
+
+
+
+Wiki-How

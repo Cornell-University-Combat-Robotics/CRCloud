@@ -1,0 +1,405 @@
+How to CAD in Fusion: Guidelines and Tips
+
+
+
+This guide will go over some tips and tricks to make sure that your CAD sketch, part, or assembly is super duper organized and easily accessible by other people. 
+
+
+
+Anna Boese’s Number 1 CAD Tip: The shortcut ‘s’ will bring up a search bar where you can search any feature within Fusion (for example, Extrude, Mirror, Joint, etc). Use this before asking someone where to find something in Fusion! 
+
+
+
+Sketches
+
+
+
+Why are my lines turning different colors and what do those colors mean? 
+
+
+
+Blue: A blue line in your sketch means that the line (or shape) is unconstrained. This is what you will see when you first draw something in a sketch. 
+
+Unconstrained or undefined means that that particular element in your sketch is free to move unpredictably. This is bad! You want all of your sketches to be fully defined so that they are not floating in space and so other people can understand why your sketch is shaped the way it is. 
+
+
+
+Blue lines in Fusion. Note that there are two black lines, and those are defined by being coincident with the origin and being horizontal and vertical. 
+
+
+
+Black: A black line means that your sketch is defined or constrained using either the dimension tool or using other constraint methods, such as ‘coincident,’ ‘horizontal,’ or ‘collinear’ (as seen in the first picture below). This is good! You want all of your sketches to be fully constrained. 
+
+Side note: If you apply a dimension and you get the error seen in the second picture (the one that says ‘over-constrained sketch’), that means that you’re trying to apply a dimension to a sketch that is already fully defined—aka, the dimension you’re adding is both unnecessary and impossible to apply. A driven dimension is simply a reference dimension that you can look at but cannot edit. 
+
+
+
+Constraints listed in the bar at the top of your screen while in sketch mode. 
+
+
+
+An example of a pop-up you’ll get when you try to overconstrain a sketch. 
+
+
+
+Purple: A purple line is a projected sketch. If you press ‘p’ on your keyboard while in sketch mode and select a face or a different sketch, then you can project an element onto your sketch plane. If the reference face or sketch updates, then your sketch should (typically) update with it. Be careful using projected sketches! If you then delete the reference face or sketch, then Fusion no longer knows where the projection came from, and you’ll get a bunch of yellow lines, which is bad!
+
+
+
+Projecting the face of a cube onto your sketch plane. 
+
+
+
+
+
+The resulting sketch in purple. 
+
+
+
+Yellow: A yellow line means that Fusion knows there is supposed to be a sketch element there, but it doesn’t know where it came from. This is typically a result of misusing a projected sketch. If you have any yellow elements in a sketch, you must redefine them! Yellow sketches are bad. 
+
+
+
+This sketch is yellow because I deleted the cube that the projected face was referenced from. 
+
+
+
+Green: A green sketch indicates that the sketch is fixed. Generally, this is bad because other users will not understand how your sketch is defined. There are two ways that your sketch can be green: 
+
+You manually fixed the sketch: This happens when you right-click an element of the sketch and hit ‘Fix/UnFix’. Once it is fixed, it will not move. 
+
+You redefine the sketch plane of a projected sketch: If your sketch contains a projection and then you redefine your sketch plane, the new sketch will turn your projection into a fixed sketch. If you do this, you should delete the sketch and re-project it so it turns purple. 
+
+
+
+What are parameters and why should I use them? 
+
+
+
+Under Modify → Parameters, you can add User Parameters, which are variables that you can use when defining your sketches. 
+
+
+
+
+
+An example of a user parameter. 
+
+
+
+When you make a sketch, you can then use this parameter as though entering a variable into an equation. 
+
+
+
+
+
+An example usage of a parameter. 
+
+
+
+A dimension with an fx next to it means that it has been defined using a parameter. 
+
+
+
+
+
+What a parameterized dimension looks like. 
+
+
+
+So why should I use parameters? 
+
+Parameters help people understand what your dimension means. Using the pulleyDiameter parameter will make more sense to someone looking at your sketch than just the number 2. 
+
+Parameters will make adjustments to your part file easy in the long run. If you have a parameter wheelDiameter that you use when defining your chassis, if the wheel diameter changes, you can easily change it in your parameters and you won’t have to individually change 200 different dimensions in a bunch of different sketches. 
+
+Other tips on using parameters: 
+
+You don’t need a parameter for every single dimension. Be sure to use your parameters in an effective way that is easy to understand by someone looking at your part file. If it’s a one-time dimension, like a fillet, a parameter probably isn’t necessary. (But if you have a bunch of fillets that you want to be the same size, then it might be useful…)
+
+Give your parameters names that other people will understand! Diameter is not a useful name. weaponPulleyDiameter is a useful name. 
+
+
+
+
+
+My sketch is yellow in the timeline—what does this mean? 
+
+
+
+
+
+An example of a yellow sketch in a timeline.	
+
+
+
+This could mean 2 things:
+
+You have a projected sketch but Fusion can no longer figure out where the sketch is projected from (see the explanation on yellow lines above). 
+
+You have to redefine your sketch plane, which is necessary if you drew your sketch on a surface that no longer exists. 
+
+Right click the sketch in the timeline. 
+
+Hit ‘Redefine Sketch Plane.’ 
+
+Click a new plane on which your sketch should reside. 
+
+This could be an XY plane, YZ plane, XZ plane, a face of a body, or a construction plane that you made yourself. 
+
+The yellow should be gone now!
+
+
+
+
+
+Organizing a part file
+
+
+
+Using the timeline
+
+
+
+The timeline is the thing at the bottom of your screen: 
+
+
+
+
+
+It keeps track of the “operations” that occur in your part file, and the order in which it happens. 
+
+The gray bar that you see at the end of the timeline can be moved so you can essentially reverse time. This is useful if you realize that you need to do an operation before another operation (for example, adding a construction plane to use for the mirror operator). 
+
+
+
+Organizing your timeline into groups
+
+You can organize your timeline into groups: 
+
+Select a bunch of operations with ctrl → right click → hit ‘Create Group’
+
+You can then rename this group into something useful. 
+
+Some examples of useful groups: 
+
+Fillet groups
+
+Joint groups
+
+Hole groups
+
+Caveat: Unfortunately, there is no way to add a new operation to an existing group. The only way to do this is to delete your previous group and make a new group with the new feature. 
+
+
+
+Capture design history
+
+When you upload a part into Fusion (from McMaster, maybe), it will not have a timeline. To ensure that you have a timeline before making changes to the parts: 
+
+Right click the part name in the browser. 
+
+
+
+Select 'Capture Design History’ at the bottom. 
+
+Now you can begin editing! (If you want to.)
+
+
+
+
+
+Labeling your sketches
+
+DO IT! 
+
+Labeling your sketches is essential for organization. It is helpful for you to remember when, where, and how you’ve defined your part, and it’s helpful to others who are trying to understand you CADding process. 
+
+To label your sketch: 
+
+Right click your sketch in the browser. 
+
+Hit ‘Rename’. 
+
+
+
+
+
+
+
+Organizing an assembly
+
+What is a component? 
+
+A component is a fancy word for a part. It can come from a variety of places: 
+
+You can insert a component from a part you made by right-clicking the part in the Data Panel (the place where the files are) and clicking ‘Insert into Current Design’. 
+
+It is not recommended that you edit the part in this assembly file! This is called editing in place, and it makes it extremely difficult for other people to understand how you constructed your part. You should only edit parts in your part files. 
+
+You can import a part from McMaster by downloading the file from the website, uploading it to Fusion, and inserting it into your design as described in the previous point. 
+
+(It is possible to directly import a McMaster part from Fusion, but this is not recommended since it creates a base feature and you are unable to rename the part or easily use it in other files.)
+
+You can create a component by selecting Create → New Component. 
+
+A good example of using this feature is in the ‘Chassis Assembly’ in Benjamin Rimshot Johm, Esq.
+
+This allows you to create your parts in the same file without having separate part files that are then inserted into the assembly. 
+
+To edit this component, make sure that it is activated in the browser by clicking the dot next to the component (see the picture below). 
+
+
+
+
+
+An activated component in an assembly. 
+
+
+
+How many assemblies, subassemblies, subsubassemblies, etc. should I have? 
+
+
+
+A part file contains only the part and no components. 
+
+This is where editing should take place. 
+
+
+
+
+
+A part file contains no components in the browser. 
+
+
+
+An assembly file should generally only contain components. 
+
+You should generally not make any edits to parts in an assembly file. 
+
+(There are some exceptions to this rule. See ‘Chassis Assembly’ in Benjamin Rimshot Johm, Esq. for an example.) 
+
+You should label your assembly as ‘Assembly’ in the file name so other people know that it’s an assembly (Fusion does not differentiate automatically between part files and assembly files.) 
+
+Use sub-assemblies with care; do not make unnecessary sub-assembles. Having 1 sub-assembly per subsystem is typical. 
+
+
+
+
+
+An assembly file contains only components in the browser. 
+
+
+
+
+
+Here’s an example of part organization for a kinetic robot: 
+
+Full assembly (contains components only)
+
+Chassis assembly (contains components only, with exceptions)
+
+Billet
+
+Uprights
+
+Top plate
+
+Chassis screws
+
+Etc. 
+
+Drivetain assembly
+
+Wheel
+
+Motor
+
+Gearbox
+
+Pulley
+
+Spacers
+
+Drivetrain screws
+
+Etc. 
+
+Weapon assembly
+
+Weapon blade
+
+Weapon shaft
+
+Bearings
+
+Spacers
+
+Pulleys
+
+Etc. 
+
+Battery
+
+ESCs
+
+Weapon motor (if not a hub motor)
+
+Inter-subsystem screws
+
+Configurations
+
+
+
+What is a joint and how do I use one properly? 
+
+
+
+A joint positions components relative to each other in an assembly.
+
+To joint components:
+
+Make sure they are components not bodies!
+
+Click the joint button in Assemble (or press “J”)
+
+
+
+
+
+
+
+Select the place you want to join on the first component
+
+
+
+
+
+Select the place you want to join on the second component
+
+
+
+
+
+
+
+Click “OK” (or press “Enter”)
+
+
+
+
+
+Make sure to name the joint!
+
+Click the folder “Joints”
+
+Double click the joint and name it according to naming convention
+
+[Name of component 1] to [name of component 2]
+
+
+
+
+
+
+
+I have so many screws and small parts! How should I organize this?

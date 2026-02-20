@@ -1,0 +1,69 @@
+How to battle harden your motors
+
+	This link leads to a video that gives a detailed video and an example for battle hardening. Battle hardening is the process of putting a glass microbe and epoxy mix between the magnets of motors so that the magnets will not shift and potentially shatter if the motor is hit.
+
+SAFETY: 
+
+Make sure to wear a mask AT ALL TIMES when applying the glass microbe and epoxy mix. If you inhale a lot of the glass microbes you will get microplastics in your lungs and probably die from cancer :( 
+
+Wear gloves AT ALL TIMES when applying the glass microbe and epoxy mix. The stuff can get on your skin and it would be yucky because it would then become hard to peel off.
+
+When applying acetone, make sure that the cup you are putting the acetone in is resistant to acetone and will not get immediately melted. Acetone reacts with plastic and will literally melt through some cups so yeah.
+
+STEP 1:
+
+Take apart each motor: The motors will have c-clips and shaft collars that will need to be taken off in order to pull apart the top and bottom in order to harden each piece. Another thing that will be on the motor is these golden ring things but you can just take those off and store them for later, they are basically just mini bearings for the motor. Be careful not to lose any parts!
+
+Shaft collar:
+
+Screw these off using an appropriate allen key. If the screw is stripped and if you do not need the original shaft, you can use the drill press to take out the excess metal inside of the shaft collar. OR you can use the saw to saw off a large part of the shaft collar because the collar is made out of aluminum which is softer than steel.
+
+C-clips: 
+
+When you take these off, make sure not to break them because it will be nice to have them later.
+
+STEP 2:
+
+The motor separated into top and bottom should look like the picture below:
+
+TOP:
+
+
+
+BOTTOM:
+
+
+
+Make the mixture: The video explains in a good way on how to measure out the mixture starting at 7:15.
+
+Apply the mixture to the sections detailed in the video at 9:45. Make sure to quickly take off parts of the mixture before it dries so you save yourself some work scraping the rest off later on. The video goes into good detail so just watch that instead.
+
+STEP 3:
+
+After the mixture has all been applied, all that is left is scraping the rest of the mixture off. Some useful methods are:
+
+USE A BOXCUTTER to rub off excess material from the bottoms. This should be pretty easy, as all you have to do is find where the material is sticking out on the bottoms and cut it off.
+
+APPLY ACETONE to the insides of the tops, especially because it is hard to get into the tops, especially with metal objects. A method that worked with us was to tape paper towels to the tips of popsicle sticks, and then dip it into the acetone and rub it on the magnets inside of the tops, but also make sure that you don’t get acetone in-between the magnets.
+
+SCRAPE WITH A FLATHEAD SCREWDRIVER the insides of the tops; this will take off lots of excess material easily, especially after acetone has been applied and all of the material is loosened. However, you might encounter a problem with the excess little bits and material that are in the tops.
+
+USING DOUBLE SIDED TAPE TO TAKE THE BITS OFF works really well. You can get masking tape and shove it into the tops and rub it around which will catch all of the bits and take it off.
+
+SPINNING THE MOTOR. You can try to put together the tops and bottoms and spin the motor over and over again which will also gradually take off excess material. This will make bits of material that you can also take off using double sided tape.
+
+STEP 4:
+
+Repeat and suffer
+
+STEP 5: 
+
+When the motors are fully battle hardened, compare them to a control group of motors. The battle hardened motors can be a little bit rougher than normal, but they should be relatively smooth as well. 
+
+They should look a little something like this:
+
+
+
+Reference the video as well to see how a good battle hardened motor should look like.
+
+You are done! Time for therapy. Here is a useful website for free therapy options offered by Cornell Health.

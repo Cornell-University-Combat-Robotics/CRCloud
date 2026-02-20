@@ -1,22 +1,0 @@
-JANFAB DAY 3
-
-AaronAnanyaEthan DGraceJennyRiddhiRohinSophieTylerShaoAnikaRyanVinsonPPPPPPLPAPPLATasks: 
-Agenda
- Take attendance! (P if present, L if late, A if absent, E if excused)
-
-
-ProjectMembersBrief, informative summary of work done, emphasis on high-level problems and plans for next meetingRecoverySophie ChengRiddhi Lamba- Added checks for when we drive off camera/into the blindspot
-- Hard coded forward/backward movement to re-enter the frame
-- Live tested, unclear results
-MechE:
-- 1 green, 1 blue (there is a lighter blue/not navy blue), 1 orange
-? CLEAT WHEEL: Make the sausages and middle are double the height (0.06in to 0.12in)
-? TO BE PRINTED in Nylon (6x)
-? WHEEL GUARD AND SIDE WALL: Make the screw holes very slightly larger than the diameter of the screws (axel screw holes are now 0.075in radius/0.15 diameter)
-? TO BE PRINTED in TPU (6x each)
-Side Wall Guard (c shape)TPU15%Side Wall (inner)TPU40%Wheel Guard (outer)TPU15%
-? Order the flower metal thing 2x
-? It will be ordered at a later point
-
-Autonomous Meeting Notes9/4/2025
-

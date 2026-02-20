@@ -1,0 +1,57 @@
+How to pick tolerances
+
+
+
+Perhaps put a little blurb here explaining why this document exists, or any other references that people can refer to. 
+
+
+
+Heading 1
+
+Your very first section! Congrats! Make sure to include pictures and be as specific as possible while not over-blabbing. (By the way, make sure to tell Anna you’re writing this so she can proof-read it when you’re done!)
+
+
+
+Also, try to not use paragraphs as much as possible. 
+
+The easier it is to read, the more likely someone will be to read it. 
+
+
+
+Subheading
+
+You may or may not need this, but here it is just in case. 
+
+If you’re listing steps
+
+to do something, 
+
+then maybe using a 
+
+numbered list
+
+might be helpful!
+
+Maybe even substeps too…
+
+
+
+Heading 2
+
+In case you need another one…who knows!
+
+
+
+
+
+SLIP FIT- WITHIN 1 THOU ON GREATER END OF BEARING SIZE GIVEN BEARING TOLERANCE
+
+	Smaller bearing- 1 thou may be too large
+
+	Lower limit: largest bearing size, Highest limit: 1 thou above that 
+
+Press fit if you are comfortable with part never coming again
+
+
+
+https://amesweb.info/fits-tolerances/tolerance-calculator.aspx

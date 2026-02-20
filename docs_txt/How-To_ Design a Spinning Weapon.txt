@@ -1,0 +1,35 @@
+How to design a spinning weapon
+
+
+
+Order of operations: 
+
+
+
+
+
+Geometry
+
+Rake angle
+
+
+
+
+
+
+
+Choosing a motor
+
+Use this powertrain speccer sheet. 
+
+
+
+
+
+Determining pulley geometry and belt lengths
+
+
+
+
+
+Recommended materials and hardnesses

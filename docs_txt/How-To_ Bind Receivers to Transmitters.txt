@@ -1,0 +1,79 @@
+How to bind receivers to transmitters
+
+FRSky Taranis X-Lite S
+
+Start with the receiver connected to the battery but TURNED OFF
+
+Go to the SETUP screen
+
+
+
+
+
+Scroll down to Module
+
+Select [Reg]
+
+
+
+
+
+While the transmitter displays this screen, turn on the receiver WHILE holding down the button on the receiver
+
+
+
+
+
+The screen should display a “Registration OK” message
+
+Press [ENTER]
+
+Power off the receiver
+
+Scroll to Receiver 1
+
+
+
+
+
+Select Bind
+
+
+
+
+
+While the transmitter displays this screen, turn on the receiver WITHOUT holding down the button on the receiver
+
+
+
+
+
+The screen should display a “Bind Successful” message
+
+To bind multiple receivers, change the RxNum
+
+
+
+
+
+Repeat steps 3-5
+
+Substitute Receiver 1 with Receiver 2 in step 6
+
+Mark each receiver with its RxNum, you will need to change it based on which receiver you are using
+
+FlySky FS-i6
+
+
+
+Plug the bind key into the receiver
+
+Plug into the B/VCC channel
+
+Power the receiver
+
+Power on the transmitter while holding down the bind key
+
+The receiver should be binded
+
+The TX battery level should appear at the top right corner

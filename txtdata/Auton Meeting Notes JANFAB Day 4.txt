@@ -1,43 +1,0 @@
-JANFAB DAY 4
-
-AaronAnanyaEthan DGraceJennyRiddhiRohinSophieTylerShaoAnikaRyanVinsonLLPPLPPLAPPLLTasks: 
-Agenda
- Take attendance! (P if present, L if late, A if absent, E if excused)
-
-
-ProjectMembersBrief, informative summary of work done, emphasis on high-level problems and plans for next meetingRecoveryRiddhi LambaSophie Cheng- Back-up kicks in as soon as Huey goes off-screen
-- Recovery starts if Huey has been offscreen/unresponsive for too long
-- Tested in videos + live-tested without algo
-- Do tomorrow:
-- Live test
-- Add resizable pop-up for Windows equality
-- Look through algo code and ensure there are no gaps in logic like beforeMechEGrace Lim- Literally nothing was done today other than make mistakes
-- REMEMBER TO MAKE HOLES
-- Need to print 6 nylon wheelsSensorsAnanya JajodiaRohin PhukanShao StassenEthan DeCamp- Graph shows sensor vs corner detection orientation 
-- Merge with color percentage
-- Synced sensor with corner detection
-Corner DetectionAnika KumarVinson ChenRyan SiglagTestingSensors: 
-Made graph for sensors and corner detection:
-- Confirmed that corner detection is slow but mostly good, and the sensor is fast but wrong, disturbed easily, and it stop reacting after while of constant motion (stop read data occasionally)
-- Realized that either the graph code is slow, or the corner detection drops
-SENSORS POSSIBLE BUGS AND FUTURE FIXES
-- Snapping into recovery when we don't need to 
-- Corner detection doesn't work potentially means we have our orientation but don't know which robot is ours
-- Need to patch with the color percentage and coordinate that during merge
-Worked on sync code:
-- At first the sync is flip 180 degrees
-- Now it read sensor then sync the sensor value with corner detection, runs the same rate as corner detection, but now we can estimate driving and still operational even off screen or when not detecting enough corners
-- But need to work with recovery decide when to switch to recovery when corner detection stop working
-
-Corner detection:
-- Realized there was a bug in algo when the enemy bot isnt identified
-- Changed it so it appends the enemy's last known position to enemy positions instead of huey's last known position to huey's positions
-- Merged to develop (thanks shao)
-- Merged code into develop
-- Merged corner detection code into recovery branch
-- Worked well we think?
-- Correctly did huey identification when it identified the enemy png as 2 bots rather than 1
-- HOORAY
-
-Autonomous Meeting Notes9/4/2025
-
