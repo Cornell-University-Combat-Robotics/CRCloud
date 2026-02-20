@@ -24,8 +24,9 @@ def mention_handler(body, say):
     #say(f"Hello, <@{user_id}>! I received your mention.")
     #say(f"clap clap clap")
     question = body['event']['text'].split('>', 1)[1].strip()
+    thread_ts_value = body['event'].get("thread_ts") or body['event']["ts"]
     answer = bot.query(question)
-    say(f"Answer: {answer}")
+    say(text= f"{answer}", thread_ts=thread_ts_value)
 
 if __name__ == "__main__":
     bot = Ooga()
