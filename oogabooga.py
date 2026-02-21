@@ -44,7 +44,7 @@ class Ooga:
             )
         return collection
     
-    def query(self, user_text, num_results = 3):
+    def query(self, user_text, num_results = 3, thread_messages = ""):
         query_embedding = self.embedding_function.encode(user_text).tolist()
 
         results = self.collection.query(
@@ -54,15 +54,51 @@ class Ooga:
         context = ""
         for i in range(0, num_results):
             context += f"{results['documents'][0][i]} \n"
-        
+
+            messages = []
+
+        messages.append({
+            "role": "system",
+            "content": "You are a funny and helpful RAG assistant for Cornell's Combat Robotics team (CRC). "
+                    "Answer questions about our documentation and explain reasoning. "
+                    "If unsure, say you don't know. "
+                    "Include file names used in context at the end. "
+                    "Here is your context:\n" + context
+        })
+
+        if thread_messages:
+            for msg in thread_messages:
+                if "bot_id" in msg:
+                    role = "assistant"
+                else:
+                    role = "user"
+
+                messages.append({
+                    "role": role,
+                    "content": msg.get("text", "")
+                })
+
+        # add current user message
+        messages.append({
+            "role": "user",
+            "content": user_text
+        })
+
         response = self.client.chat.completions.create(
             model="gpt-3.5-turbo",
-            messages=[
-                # CONTEXT HERE
-                {"role": "system", "content": "You are a funny and helpful RAG assistant for cornell's combat robotics team (CRC). Answer questions about our documentation, and explain your reasoning behind each answer. if you are not confident in your answer, say you dont know. You may also answer non crc related questions. Also, include the names of the files which you were given context from at the end of your message. Here is your context: " + context},
-                {"role": "user", "content": f"{user_text}"}
-            ]
+            messages=messages
         )
+
+        
+        
+        # response = self.client.chat.completions.create(
+        #     model="gpt-3.5-turbo",
+        #     messages=[
+        #         # CONTEXT HERE
+        #         {"role": "system", "content": "You are a funny and helpful RAG assistant for cornell's combat robotics team (CRC). Answer questions about our documentation, and explain your reasoning behind each answer. if you are not confident in your answer, say you dont know. You may also answer non crc related questions. Also, include the names of the files which you were given context from at the end of your message. Here is your context: " + context},
+        #         {"role": "user", "content": f"{user_text}"}
+        #     ]
+        # )
 
         return response.choices[0].message.content
         
