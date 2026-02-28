@@ -67,6 +67,21 @@ class Ooga:
         })
 
         if thread_messages:
+            if len(thread_messages) > 35:
+                summary = ""
+                for msg in thread_messages:
+                    summary = summary + msg + "\n"
+                response = self.client.chat.completions.create(
+                    model="gpt-3.5-turbo",
+                    messages=[
+                        # CONTEXT HERE
+                        {"role": "system", "content": "Summarize in 5 sentences."},
+                        {"role": "user", "content": f"{summary}"}
+                    ]
+                )
+                output_text = response.choices[0].message.content
+                thread_messages = [output_text]
+
             for msg in thread_messages:
                 if "bot_id" in msg:
                     role = "assistant"
