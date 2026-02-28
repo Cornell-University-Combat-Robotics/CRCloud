@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 import json
+from slack_bolt import App
 
 
 # func 1: processing data, return collection
@@ -22,6 +23,7 @@ class Ooga:
             settings=chromadb.config.Settings(anonymized_telemetry=False)
         )
         self.collection = self.create_data()
+        self.app = App(token=os.getenv("SLACK_BOT_TOKEN"))
 
     def create_data(self):
         hashmap = {}
@@ -60,7 +62,7 @@ class Ooga:
         messages.append({
             "role": "system",
             "content": "You are a funny and helpful RAG assistant for Cornell's Combat Robotics team (CRC). "
-                    "Answer questions about our documentation and explain reasoning. "
+                    "Answer questions about our documentation and explain reasoning. You are in a Slack groupchat."
                     "If unsure, say you don't know. "
                     "Include file names used in context at the end. "
                     "Here is your context:\n" + context
@@ -73,9 +75,10 @@ class Ooga:
                 else:
                     role = "user"
 
+                user_id = msg.get("user", "")
                 messages.append({
                     "role": role,
-                    "content": msg.get("text", "")
+                    "content": "User: " + self.app.client.users_info(user=user_id).get("user").get("name") + "\nMessage: " + msg.get("text", "")
                 })
 
         # add current user message
