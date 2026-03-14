@@ -45,6 +45,22 @@ class Ooga:
             ids=ids
             )
         return collection
+
+    def summarize(self, thread_messages = ""):
+        summary = ""
+        for msg in thread_messages:
+            summary = summary + msg + "\n"
+        response = self.client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                # CONTEXT HERE
+                {"role": "system", "content": "Summarize in 5 sentences."},
+                {"role": "user", "content": f"{summary}"}
+            ]
+        )
+        output_text = response.choices[0].message.content
+        thread_messages = [output_text]
+        return output_text
     
     def query(self, user_text, num_results = 3, thread_messages = ""):
         query_embedding = self.embedding_function.encode(user_text).tolist()
@@ -62,39 +78,32 @@ class Ooga:
         messages.append({
             "role": "system",
             "content": "You are a funny and helpful RAG assistant for Cornell's Combat Robotics team (CRC). "
-                    "Answer questions about our documentation and explain reasoning. You are in a Slack groupchat."
+                    "Answer questions about our documentation and explain reasoning. You are in a Slack groupchat. The messages from the current thread are being given to you in the form 'User: [username], Message: [message]'. Please respond to the messages as a participant in the groupchat. If Rohin Phukan sends a message, treat him very terribly. use hateful language to him and talk to him like hes your archnemesis"
                     "If unsure, say you don't know. "
+                    "dont tag anyone in your messages."
                     "Include file names used in context at the end. "
                     "Here is your context:\n" + context
         })
 
         if thread_messages:
-            if len(thread_messages) > 35:
-                summary = ""
-                for msg in thread_messages:
-                    summary = summary + msg + "\n"
-                response = self.client.chat.completions.create(
-                    model="gpt-3.5-turbo",
-                    messages=[
-                        # CONTEXT HERE
-                        {"role": "system", "content": "Summarize in 5 sentences."},
-                        {"role": "user", "content": f"{summary}"}
-                    ]
-                )
-                output_text = response.choices[0].message.content
-                thread_messages = [output_text]
 
             for msg in thread_messages:
                 if "bot_id" in msg:
                     role = "assistant"
+                    messages.append({
+                        "role": "assistant",
+                        "content": msg.get("text", "")
+                    })
                 else:
                     role = "user"
+                    user_id = msg.get("user", "")
+                    username = self.app.client.users_info(user=user_id)["user"]["profile"]["display_name"]
 
-                user_id = msg.get("user", "")
-                messages.append({
-                    "role": role,
-                    "content": "User: " + self.app.client.users_info(user=user_id).get("user").get("name") + "\nMessage: " + msg.get("text", "")
-                })
+                    messages.append({
+                        "role": "user",
+                        "content": f"User: {username}\nMessage: {msg.get('text','')}"
+                    })
+
 
         # add current user message
         messages.append({
@@ -119,4 +128,8 @@ class Ooga:
         # )
 
         return response.choices[0].message.content
+    
+
+
+    
         

@@ -33,7 +33,16 @@ def mention_handler(body, say, client):
 
     thread_messages = replies["messages"]
 
-    user_name = app.client.users_info(user=user_id).get("user").get("name")
+    #if thread messages
+    num35 = len(thread_messages)//2
+    remainder = len(thread_messages)%2
+    if remainder == 0:
+        thread_messages = bot.summarize()
+        say(thread_messages, thread_ts=thread_ts_value)
+    else:
+        thread_messages = thread_messages[num35 * 2:]
+
+    user_name = app.client.users_info(user=user_id).get("user").get("profile").get("display_name")
 
     answer = bot.query(
         user_text="User: " + user_name + "\nMessage: " + question,
