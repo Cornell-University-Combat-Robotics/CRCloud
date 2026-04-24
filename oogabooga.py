@@ -49,13 +49,14 @@ class Ooga:
     def summarize(self, thread_messages = ""):
         summary = ""
         for msg in thread_messages:
-            summary = summary + msg + "\n"
+            summary = summary + msg.get("text", "") + "\n"
+        print("SUMMARY: ", summary)
         response = self.client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 # CONTEXT HERE
                 {"role": "system", "content": "Summarize in 5 sentences."},
-                {"role": "user", "content": f"{summary}"}
+                {"role": "user", "content": f"Here is the conversation to summarize: {summary}"}
             ]
         )
         output_text = response.choices[0].message.content
@@ -97,7 +98,10 @@ class Ooga:
                 else:
                     role = "user"
                     user_id = msg.get("user", "")
-                    username = self.app.client.users_info(user=user_id)["user"]["profile"]["display_name"]
+                    if user_id != "":
+                        username = self.app.client.users_info(user=user_id)["user"]["profile"]["display_name"]
+                    else:
+                        username = ""
 
                     messages.append({
                         "role": "user",
